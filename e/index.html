@@ -8,7 +8,7 @@
   <source type=“video/mp4” src=“1.mp4”>
 </video>
     <script >
-	var v = document.getElementById(‘v’);
+	var v = document.getElementById("v");
 v.addEventListener("canplaythrough", function(e) {
   console.log(e.type, this.seekable.end(0));
 });</script>
