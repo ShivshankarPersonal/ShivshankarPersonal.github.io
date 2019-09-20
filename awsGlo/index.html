@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<style>
+dl{
+  background: black;
+}
+a {
+    color: #bd8f49;
+    text-decoration: none;
+}
+    dt{
+      font-weight: 700;
+    line-height: 1.4375;
+    margin-bottom: -20px;
+    border-top: 1px solid lightgray;
+    color: #e8d56e;
+    /* background-color: gray; */
+    margin-left: 10px;
+    font-size: 29px;
+   }
+   dd{
+    margin-left: 0;
+    line-height: 1.4375;
+    margin-bottom: 15px;
+    color: lightyellow;
+    margin-left: 30px;
+    font-size: 20px;
+   }
+</style>
+</head>
+<body>
+
+        <dl>
+                <dt><a name="hundredcontinue"></a>100-continue
+                </dt>
+                <dd>
+                   
+                   
+                   <p>A method that enables a client to see if a server can accept a request before actually
+                      sending it. For large PUT requests, this method can
+                      save both time and bandwidth charges.
+                   </p>
+                   
+                </dd>
+             </dl>
+
+
+
+            
+             <dl>
+                <dt>AAD</dt>
+                <dd>
+                   <p>See <a href="#additional_authenticated_data">additional authenticated data</a>.
+                   </p>
+                </dd>
+                <dt><a name="ACL"></a>access control list <abbr class="abbrev">(ACL)</abbr></dt>
+                <dd>
+                   
+                   
+                   <p>A document that defines who can access a particular <a href="glos-chap.html#bucket">bucket</a> or object. Each <a href="glos-chap.html#bucket">bucket</a> and object in <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a> has an ACL. The document defines what each type of user can do, such as write and
+                      read permissions.
+                   </p>
+                   
+                </dd>
+                <dt>access identifiers</dt>
+                <dd>
+                   <p>See <a href="#accesscredentials">credentials</a>.
+                   </p>
+                </dd>
+                <dt><a name="access_key"></a>access key
+                </dt>
+                <dd>
+                   
+                   <p>The combination of an <a href="glos-chap.html#accesskeyID">access key ID</a> (like <code class="code">AKIAIOSFODNN7EXAMPLE</code>) and a <a href="glos-chap.html#SecretAccessKey">secret access key</a> (like <code class="code">wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</code>). You use access keys
+                      to sign API requests that you make to AWS.
+                   </p>
+                   
+                </dd>
+                <dt><a name="accesskeyID"></a>access key ID
+                </dt>
+                <dd>
+                   
+                   <p>A unique identifier that's associated with a <a href="glos-chap.html#SecretAccessKey">secret access key</a>; the access key ID and secret
+                      access key are used together to sign programmatic AWS requests cryptographically.
+                   </p>
+                   
+                </dd>
+                <dt><a name="keyrotate"></a>access key rotation
+                </dt>
+                <dd>
+                   
+                   <p>A method to increase security by changing the AWS access key ID. This method enables
+                      you to retire an old key at your discretion.
+                   </p>
+                   
+                </dd>
+                <dt><a name="accesslang"></a>access policy language
+                </dt>
+                <dd>
+                   
+                   <p>A language for writing documents (that is, <a href="glos-chap.html#policy">policies</a>) that specify
+                      who can access a particular AWS <a href="glos-chap.html#resource">resource</a> and under what conditions.
+                   </p>
+                   
+                </dd>
+                <dt><a name="account"></a>account
+                </dt>
+                <dd>
+                   
+                   <p>A formal relationship with AWS that is associated with all of the following:</p>
+                   
+                   <div class="itemizedlist">
+                      
+                      
+                      
+                      
+                      <ul class="itemizedlist" type="disc">
+                         <li class="listitem">
+                            
+                            <p>The owner email address and password</p>
+                            
+                         </li>
+                         <li class="listitem">
+                            
+                            <p>The control of <a href="glos-chap.html#resource">resource</a>s created under its umbrella
+                            </p>
+                            
+                         </li>
+                         <li class="listitem">
+                            
+                            <p>Payment for the AWS activity related to those resources</p>
+                            
+                         </li>
+                      </ul>
+                   </div>
+                   
+                   <p>The AWS account has permission to do anything and everything with all the AWS account
+                      resources. This is in contrast to a <a href="glos-chap.html#AWSUser">user</a>, which is an entity contained within the account.
+                   </p>
+                   
+                </dd>
+                <dt><a name="accountactivity"></a>account activity
+                </dt>
+                <dd>
+                   
+                   <p>A webpage showing your month-to-date AWS usage and costs. The account activity page
+                      is located at <a href="https://aws.amazon.com/account-activity/" target="_blank">https://aws.amazon.com/account-activity/</a>.
+                   </p>
+                   
+                </dd>
+                <dt>ACL</dt>
+                <dd>
+                   <p>See <a href="#ACL">access control list (ACL)</a>.
+                   </p>
+                </dd>
+                <dt>ACM</dt>
+                <dd>
+                   <p>See <a href="#acm">AWS Certificate Manager (ACM)</a>.
+                   </p>
+                </dd>
+                <dt>ACM PCA</dt>
+                <dd>
+                   <p>See <a href="#acm-pca">AWS Certificate Manager Private Certificate Authority (ACM PCA)</a>.
+                   </p>
+                </dd>
+                <dt>ACM Private CA</dt>
+                <dd>
+                   <p>See <a href="#acm-pca">AWS Certificate Manager Private Certificate Authority (ACM PCA)</a>.
+                   </p>
+                </dd>
+                <dt><a name="action"></a>action
+                </dt>
+                <dd>
+                   
+                   <p>An API function. Also called <em>operation</em> or <em>call</em>. The activity the <a href="glos-chap.html#principal">principal</a> has permission to perform. The action is B in the statement "A has permission to
+                      do B to C where D applies." For
+                      example, Jane sends a request to <a href="glos-chap.html#AmazonSimpleQueueService">Amazon SQS</a> with
+                      Action=ReceiveMessage. 
+                   </p>
+                   
+                   <p><a href="glos-chap.html#AmazonCW">Amazon CloudWatch</a>: The response initiated by the change in an alarm's state: for example, from OK to
+                      ALARM.
+                      The state change may be triggered by a metric reaching the alarm threshold, or by
+                      a SetAlarmState request. Each alarm can have one or more
+                      actions assigned to each state. Actions are performed once each time the alarm changes
+                      to a state that has an action assigned, such as an <a href="glos-chap.html#SNS">Amazon Simple Notification Service</a> notification, an <a href="glos-chap.html#AutoScaling">Amazon EC2 Auto Scaling</a>
+                      <a href="glos-chap.html#policy">policy</a> execution or an <a href="glos-chap.html#ec2">Amazon EC2</a>
+                      <a href="glos-chap.html#instance">instance</a> stop/terminate action.
+                   </p>
+                   
+                </dd>
+                <dt><a name="trustedsigner"></a>active trusted signers
+                </dt>
+                <dd>
+                   
+                   
+                   <p>A list showing each of the trusted signers you've specified and the IDs of the corresponding
+                      active key pairs that <a href="glos-chap.html#AmazonCF">Amazon CloudFront</a> is aware of. To be able to create working signed URLs, a trusted signer must
+                      appear in this list with at least one key pair ID.
+                   </p>
+                   
+                </dd>
+                <dt><a name="additional_authenticated_data"></a>additional authenticated data
+                </dt>
+                <dd>
+                   
+                   <p>Information that is checked for integrity but not encrypted, such as headers or other
+                      contextual metadata.
+                   </p>
+                   
+                </dd>
+                <dt><a name="admin_suspension"></a>administrative suspension
+                </dt>
+                <dd>
+                   
+                   <p><a href="glos-chap.html#AutoScaling">Amazon EC2 Auto Scaling</a> might suspend processes for <a href="glos-chap.html#AutoScalingGroup">Auto Scaling group</a> that repeatedly fail to launch instances. Auto Scaling groups that most commonly
+                      experience administrative suspension
+                      have zero running instances, have been trying to launch instances for more than 24
+                      hours, and have not succeeded in that time. 
+                   </p>
+                   
+                </dd>
+                <dt><a name="alarm"></a>alarm
+                </dt>
+                <dd>
+                   
+                   
+                   <p>An item that watches a single metric over a specified time period and triggers an
+                      <a href="glos-chap.html#SNS">Amazon SNS</a>
+                      <a href="glos-chap.html#topic">topic</a> or an <a href="glos-chap.html#AutoScaling">Amazon EC2 Auto Scaling</a>
+                      <a href="glos-chap.html#policy">policy</a> if the value of the metric crosses a threshold value over a predetermined number
+                      of time
+                      periods.
+                   </p>
+                   
+                </dd>
+                <dt><a name="allow"></a>allow
+                </dt>
+                <dd>
+                   
+                   
+                   <p>One of two possible outcomes (the other is <a href="glos-chap.html#deny">deny</a>) when an <a href="glos-chap.html#IAM">IAM</a> access <a href="glos-chap.html#policy">policy</a> is evaluated. When a user makes a request to AWS, AWS evaluates the
+                      request based on all permissions that apply to the user and then returns either allow
+                      or deny.
+                   </p>
+                   
+                </dd>
+                <dt><a name="APIGateway"></a>Amazon API Gateway
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed service that makes it easy for developers to create, publish, maintain,
+                      monitor, and secure APIs at any scale.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/apigateway/" target="_blank">https://aws.amazon.com/api-gateway</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="appstream"></a>Amazon AppStream 2.0
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed, secure service for streaming desktop applications to users without
+                      rewriting those applications.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/appstream/" target="_blank">https://aws.amazon.com/appstream/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="athena"></a>Amazon Athena
+                </dt>
+                <dd>
+                   
+                   <p>An interactive query service that makes it easy to analyze data in Amazon S3 using
+                      ANSI SQL. 
+                      Athena is serverless, so there is no infrastructure to manage. Athena scales automatically
+                      and is simple to use, so you can start analyzing your datasets within seconds.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/athena/" target="_blank">https://aws.amazon.com/athena/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="aurora"></a>Amazon Aurora
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed MySQL-compatible relational database engine that combines the speed
+                      and availability of commercial databases with the
+                      simplicity and cost-effectiveness of open-source databases.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/rds/aurora/" target="_blank">https://aws.amazon.com/rds/aurora/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="chime"></a>Amazon Chime
+                </dt>
+                <dd>
+                   
+                   <p>A secure, real-time, unified communications service that transforms meetings by making
+                      them more efficient and easier to conduct.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/chime/" target="_blank">https://aws.amazon.com/chime/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="clouddirectory"></a>Amazon Cloud Directory <abbr class="abbrev">(Cloud Directory)</abbr></dt>
+                <dd>
+                   
+                   <p>A service that provides a highly scalable directory store for your application’s multihierarchical
+                      data.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloud-directory/" target="_blank">https://aws.amazon.com/cloud-directory/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonCF"></a>Amazon CloudFront
+                </dt>
+                <dd>
+                   
+                   <p>An AWS content delivery service that helps you improve the performance, reliability,
+                      and availability of your websites and
+                      applications.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloudfront/" target="_blank">https://aws.amazon.com/cloudfront</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="cloudSearch"></a>Amazon CloudSearch
+                </dt>
+                <dd>
+                   
+                   <p> A fully managed service in the AWS Cloud that makes it easy to set up, manage, and
+                      scale a search solution for your website or application. 
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonCW"></a>Amazon CloudWatch
+                </dt>
+                <dd>
+                   
+                   <p>A web service that enables you to monitor and manage various metrics, and configure
+                      alarm actions based on data from those metrics.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloudwatch/" target="_blank">https://aws.amazon.com/cloudwatch</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonCWE"></a>Amazon CloudWatch Events
+                </dt>
+                <dd>
+                   
+                   <p>A web service that enables you to deliver a timely stream of system events that describe
+                      changes in AWS <a href="glos-chap.html#resource">resource</a>s to <a href="glos-chap.html#lambda">AWS Lambda</a> functions, streams in <a href="glos-chap.html#AmazonKinesisStreams">Amazon Kinesis Data Streams</a>, <a href="glos-chap.html#SNS">Amazon Simple Notification Service</a> topics, or built-in targets. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloudwatch/" target="_blank">https://aws.amazon.com/cloudwatch</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonCWL"></a>Amazon CloudWatch Logs
+                </dt>
+                <dd>
+                   
+                   <p>A web service for monitoring and troubleshooting your systems and applications from
+                      your existing system, application, and custom log files.
+                      You can send your existing log files to CloudWatch Logs and monitor these logs in
+                      near-real time.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloudwatch/" target="_blank">https://aws.amazon.com/cloudwatch</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="cognito"></a>Amazon Cognito
+                </dt>
+                <dd>
+                   
+                   <p>A web service that makes it easy to save mobile user data, such as app preferences
+                      or game state, in the AWS Cloud without writing any
+                      backend code or managing any infrastructure. Amazon Cognito offers mobile identity
+                      management and data synchronization across devices. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cognito/" target="_blank">https://aws.amazon.com/cognito/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="connect"></a>Amazon Connect
+                </dt>
+                <dd>
+                   
+                   <p>A service solution that offers easy, self-service configuration and enables dynamic,
+                      personal, and natural customer engagement at any scale.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/connect/" target="_blank">https://aws.amazon.com/connect/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonCorretto"></a>Amazon Corretto
+                </dt>
+                <dd>
+                   
+                   <p>A no-cost, multiplatform, production-ready distribution of the Open Java
+                      Development Kit (OpenJDK).
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/corretto/" target="_blank">https://aws.amazon.com/corretto/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="documentdb"></a>Amazon DocumentDB (with MongoDB compatibility)
+                </dt>
+                <dd>
+                   
+                   <p>A managed database service that you can use to set up, operate, and scale MongoDB-compatible
+                      databases in the cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/documentdb/" target="_blank">https://aws.amazon.com/documentdb/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="dynamodb"></a>Amazon DynamoDB
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed NoSQL database service that provides fast and predictable performance
+                      with seamless scalability. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/dynamodb/" target="_blank">https://aws.amazon.com/dynamodb/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="dynamodb-titan-backend"></a>Amazon DynamoDB Storage Backend for Titan
+                </dt>
+                <dd>
+                   
+                   <p>A storage backend for the Titan graph database implemented on top of Amazon DynamoDB.
+                      Titan is a scalable graph database optimized for storing and
+                      querying graphs.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/dynamodb/" target="_blank">https://aws.amazon.com/dynamodb/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="dynamodb-streams"></a>Amazon DynamoDB Streams
+                </dt>
+                <dd>
+                   
+                   <p>An AWS service that captures a time-ordered sequence of item-level modifications in
+                      any Amazon DynamoDB table, and stores this information in a log
+                      for up to 24 hours. Applications can access this log and view the data items as they
+                      appeared before and after they were modified, in near real
+                      time. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/dynamodb/" target="_blank">https://aws.amazon.com/dynamodb/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="EBS"></a>Amazon Elastic Block Store <abbr class="abbrev">(Amazon EBS)</abbr></dt>
+                <dd>
+                   
+                   <p>A service that provides block level storage <a href="glos-chap.html#volume">volume</a>s for use with <a href="glos-chap.html#ec2instance">EC2 instance</a>s.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ebs/" target="_blank">https://aws.amazon.com/ebs</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="EBSbacked"></a>Amazon EBS-backed AMI
+                </dt>
+                <dd>
+                   
+                   <p>A type of <a href="glos-chap.html#AmazonMachineImage">Amazon Machine Image (AMI)</a> whose <a href="glos-chap.html#instance">instance</a>s
+                      use an <a href="glos-chap.html#EBS">Amazon EBS</a>
+                      <a href="glos-chap.html#volume">volume</a> as their root device. Compare this with instances launched from <a href="glos-chap.html#instancebacked">instance store-backed AMI</a>s, which use the <a href="glos-chap.html#instancestore">instance store</a> as the
+                      root device.
+                   </p>
+                   
+                </dd>
+                <dt><a name="ecr"></a>Amazon Elastic Container Registry <abbr class="abbrev">(Amazon ECR)</abbr></dt>
+                <dd>
+                   
+                   <p>A fully managed Docker container registry that makes it easy for developers to store,
+                      manage, and deploy Docker container images. Amazon ECR
+                      is integrated with <a href="glos-chap.html#ecs">Amazon Elastic Container Service (Amazon ECS)</a> and <a href="glos-chap.html#IAM">AWS Identity and Access Management (IAM)</a>.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ecr" target="_blank">https://aws.amazon.com/ecr</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="ecs"></a>Amazon Elastic Container Service <abbr class="abbrev">(Amazon ECS)</abbr></dt>
+                <dd>
+                   
+                   <p> A highly scalable, fast, <a href="glos-chap.html#container">container</a> management service that makes it easy to run, stop, and manage
+                      Docker containers on a <a href="glos-chap.html#cluster">cluster</a> of <a href="glos-chap.html#ec2instance">EC2 instance</a>s.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ecs" target="_blank">https://aws.amazon.com/ecs</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="ecs_service"></a>Amazon ECS service
+                </dt>
+                <dd>
+                   
+                   <p>A service for running and maintaining a specified number of <a href="glos-chap.html#task">task</a>s (instantiations of a <a href="glos-chap.html#task_definition">task definition</a>) simultaneously. 
+                   </p>
+                   
+                </dd>
+                <dt><a name="VMimport"></a>Amazon EC2 VM Import Connector
+                </dt>
+                <dd>
+                   <p>See <a href="https://aws.amazon.com/ec2/vm-import/" target="_blank">https://aws.amazon.com/ec2/vm-import</a>.
+                   </p>
+                </dd>
+                <dt><a name="ec2"></a>Amazon Elastic Compute Cloud <abbr class="abbrev">(Amazon EC2)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service that enables you to launch and manage Linux/UNIX and Windows Server
+                      <a href="glos-chap.html#instance">instance</a>s in
+                      Amazon's data centers. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ec2/" target="_blank">https://aws.amazon.com/ec2</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AutoScaling"></a>Amazon EC2 Auto Scaling
+                </dt>
+                <dd>
+                   
+                   <p>A web service designed to launch or terminate <a href="glos-chap.html#instance">instance</a>s automatically based on user-defined <a href="glos-chap.html#policy">policies</a>, schedules, and <a href="glos-chap.html#healthcheck">health check</a>s.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ec2/autoscaling/" target="_blank">https://aws.amazon.com/ec2/autoscaling</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="efs"></a>Amazon Elastic File System <abbr class="abbrev">(Amazon EFS)</abbr></dt>
+                <dd>
+                   
+                   <p>A file storage service for <a href="glos-chap.html#ec2">EC2</a>
+                      <a href="glos-chap.html#instance">instance</a>s. Amazon EFS is easy to use and provides a simple interface with which you can create
+                      and
+                      configure file systems. Amazon EFS storage capacity grows and shrinks automatically
+                      as you add and remove files.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/efs/" target="_blank">https://aws.amazon.com/efs/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonElasticMapReduce"></a>Amazon EMR <abbr class="abbrev">(Amazon EMR)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service that makes it easy to process large amounts of data efficiently. Amazon
+                      EMR uses <a href="glos-chap.html#Hadoop">Hadoop</a>
+                      processing combined with several AWS products to do such tasks as web indexing, data
+                      mining, log file analysis, machine learning, scientific
+                      simulation, and data warehousing. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/elasticmapreduce/" target="_blank">https://aws.amazon.com/elasticmapreduce</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="elastictranscoder"></a>Amazon Elastic Transcoder
+                </dt>
+                <dd>
+                   
+                   <p>A cloud-based media transcoding service. Elastic Transcoder is a highly scalable tool
+                      for converting (or <em>transcoding</em>) media files from
+                      their source format into versions that play on devices like smartphones, tablets,
+                      and PCs.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/elastictranscoder/" target="_blank">https://aws.amazon.com/elastictranscoder/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="elasticache"></a>Amazon ElastiCache
+                </dt>
+                <dd>
+                   
+                   <p>A web service that simplifies deploying, operating, and scaling an in-memory cache
+                      in the cloud. The service improves the performance of web
+                      applications by providing information retrieval from fast, managed, in-memory caches,
+                      instead of relying entirely on slower disk-based
+                      databases.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/elasticache/" target="_blank">https://aws.amazon.com/elasticache/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonElasticsearchService"></a>Amazon Elasticsearch Service <abbr class="abbrev">(Amazon ES)</abbr></dt>
+                <dd>
+                   
+                   <p>An AWS managed service for deploying, operating, and scaling Elasticsearch, an open-source
+                      search and analytics engine, in the AWS Cloud.
+                      Amazon Elasticsearch Service (Amazon ES) also offers security options, high availability,
+                      data durability, and direct access to the Elasticsearch API.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/elasticsearch-service/" target="_blank">https://aws.amazon.com/elasticsearch-service</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="eventbridge"></a>Amazon EventBridge
+                </dt>
+                <dd>
+                   
+                   <p>A serverless event bus service that enables you to connect your applications with
+                      data from a variety of sources and routes that data
+                      to targets such as AWS Lambda. You can set up routing rules to determine where to
+                      send your data to build application architectures that
+                      react in real time to all of your data sources.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/eventbridge/" target="_blank">https://aws.amazon.com/eventbridge/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="gamelift"></a>Amazon GameLift
+                </dt>
+                <dd>
+                   
+                   <p>A managed service for deploying, operating, and scaling session-based multiplayer
+                      games.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/gamelift/" target="_blank">https://aws.amazon.com/gamelift/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="guardduty"></a>Amazon GuardDuty
+                </dt>
+                <dd>
+                   
+                   <p>A continuous security monitoring service. Amazon GuardDuty can help to identify unexpected
+                      and potentially unauthorized or malicious activity
+                      in your AWS environment.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/guardduty/" target="_blank">https://aws.amazon.com/guardduty/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="Amazon_Inspector"></a>Amazon Inspector
+                </dt>
+                <dd>
+                   
+                   <p>An automated security assessment service that helps improve the security and compliance
+                      of applications deployed on AWS. Amazon Inspector automatically
+                      assesses applications for vulnerabilities or deviations from best practices. After
+                      performing an assessment, Amazon Inspector produces a detailed report
+                      with prioritized steps for remediation.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/inspector/" target="_blank">https://aws.amazon.com/inspector</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonKinesis"></a>Amazon Kinesis
+                </dt>
+                <dd>
+                   
+                   <p>A platform for streaming data on AWS. Kinesis offers services that simplify the loading
+                      and analysis of streaming data. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/kinesis/" target="_blank">https://aws.amazon.com/kinesis/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonKinesisFirehose"></a>Amazon Kinesis Data Firehose
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed service for loading streaming data into AWS. Kinesis Data Firehose
+                      can capture and automatically load streaming data into <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a> and <a href="glos-chap.html#redshift">Amazon Redshift </a>, enabling near real-time analytics with existing business intelligence tools and
+                      dashboards. Kinesis Data Firehose automatically scales
+                      to match the throughput of your data and requires no ongoing administration. It can
+                      also batch, compress, and encrypt the data before loading it. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/kinesis/firehose/" target="_blank">https://aws.amazon.com/kinesis/firehose/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonKinesisStreams"></a>Amazon Kinesis Data Streams
+                </dt>
+                <dd>
+                   
+                   <p>A web service for building custom applications that process or analyze streaming data
+                      for specialized needs. Amazon Kinesis Data Streams can continuously
+                      capture and store terabytes of data per hour from hundreds of thousands of sources.
+                      
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/kinesis/streams/" target="_blank">https://aws.amazon.com/kinesis/streams/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="lightsail"></a>Amazon Lightsail
+                </dt>
+                <dd>
+                   
+                   <p>Lightsail is designed to be the easiest way to launch and manage a virtual private
+                      server with AWS. Lightsail offers bundled plans that
+                      include everything you need to deploy a virtual private server, for a low monthly
+                      rate.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/lightsail/" target="_blank">https://aws.amazon.com/lightsail/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="lumberyard"></a>Amazon Lumberyard
+                </dt>
+                <dd>
+                   
+                   <p>A cross-platform, 3D game engine for creating high-quality games. You can connect
+                      games to the compute and storage of the AWS Cloud and
+                      engage fans on Twitch.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/lumberyard/" target="_blank">https://aws.amazon.com/lumberyard/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonMachineImage"></a>Amazon Machine Image <abbr class="abbrev">(AMI)</abbr></dt>
+                <dd>
+                   
+                   <p>An encrypted machine image stored in <a href="glos-chap.html#EBS">Amazon Elastic Block Store (Amazon EBS)</a> or <a href="glos-chap.html#AmazonSimpleStorageService">Amazon Simple Storage Service</a>. AMIs are like a template of a computer's root drive. They contain the operating
+                      system
+                      and can also include software and layers of your application, such as database servers,
+                      middleware, web servers, and so on. 
+                   </p>
+                   
+                </dd>
+                <dt><a name="machine-learning"></a>Amazon Machine Learning
+                </dt>
+                <dd>
+                   
+                   <p>A cloud-based service that creates machine learning (ML) models by finding patterns
+                      in your data, and uses these models to process new data
+                      and generate predictions.
+                   </p>
+                   
+                   <p>See Also <a href="http://aws.amazon.com/machine-learning/" target="_blank">http://aws.amazon.com/machine-learning/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="macie"></a>Amazon Macie
+                </dt>
+                <dd>
+                   
+                   <p>A security service that uses machine learning to automatically discover, classify,
+                      and protect sensitive data in AWS.
+                   </p>
+                   
+                   <p>See Also <a href="http://aws.amazon.com/macie/" target="_blank">http://aws.amazon.com/macie/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="managed-blockchain"></a>Amazon Managed Blockchain
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed service for creating and managing scalable blockchain networks using
+                      popular open source frameworks.
+                   </p>
+                   
+                   <p>See Also <a href="http://aws.amazon.com/managed-blockchain/" target="_blank">http://aws.amazon.com/managed-blockchain/</a>.
+                   </p>
+                   
+                </dd>
+                <dt>Amazon ML</dt>
+                <dd>
+                   <p>See <a href="#machine-learning">Amazon Machine Learning</a>.
+                   </p>
+                </dd>
+                <dt><a name="AmazonMobileAnalytics"></a>Amazon Mobile Analytics
+                </dt><abbr class="abbrev">(Mobile Analytics)</abbr><dd>
+                   
+                   <p>A service for collecting, visualizing, understanding, and extracting mobile app usage
+                      data at scale.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/mobileanalytics/" target="_blank">https://aws.amazon.com/mobileanalytics</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonMQ"></a>Amazon MQ
+                </dt>
+                <dd>
+                   
+                   <p>A managed message broker service for Apache ActiveMQ that makes it easy to set up
+                      and operate message brokers in the cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/amazon-mq/" target="_blank">https://aws.amazon.com/amazon-mq/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="neptune"></a>Amazon Neptune
+                </dt>
+                <dd>
+                   
+                   <p>A managed graph database service that you can use to build and run applications
+                      that work with highly connected datasets. Neptune supports the popular graph query
+                      languages Apache TinkerPop Gremlin and W3C’s SPARQL, enabling you to build queries
+                      that efficiently navigate highly connected datasets.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/neptune/" target="_blank">https://aws.amazon.com/neptune/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="quicksight"></a>Amazon QuickSight
+                </dt>
+                <dd>
+                   
+                   <p>A fast, cloud-powered business analytics service that makes it easy to build visualizations,
+                      perform analysis, and quickly get business
+                      insights from your data. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/quicksight/" target="_blank">https://aws.amazon.com/quicksight/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="redshift"></a>Amazon Redshift 
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed, petabyte-scale data warehouse service in the cloud. With Amazon Redshift,
+                      you can analyze your data using your existing business
+                      intelligence tools.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/redshift/" target="_blank">https://aws.amazon.com/redshift/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonRelationalDatabaseService"></a>Amazon Relational Database Service <abbr class="abbrev">(Amazon RDS)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service that makes it easier to set up, operate, and scale a relational database
+                      in the cloud. It provides cost-efficient, resizable
+                      capacity for an industry-standard relational database and manages common database
+                      administration tasks.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/rds/" target="_blank">https://aws.amazon.com/rds</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="ARN"></a>Amazon Resource Name <abbr class="abbrev">(ARN)</abbr></dt>
+                <dd>
+                   
+                   <p>A standardized way to refer to an AWS <a href="glos-chap.html#resource">resource</a>. For example:
+                      arn:aws:iam::123456789012:user/division_abc/subdivision_xyz/Bob.
+                   </p>
+                   
+                </dd>
+                <dt><a name="Route53"></a>Amazon Route&nbsp;53
+                </dt>
+                <dd>
+                   
+                   <p>A web service you can use to create a new DNS service or to migrate your existing
+                      DNS service to the cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/route53/" target="_blank">https://aws.amazon.com/route53</a>.
+                   </p>
+                   
+                </dd>
+                <dt>Amazon S3</dt>
+                <dd>
+                   <p>See <a href="#AmazonSimpleStorageService">Amazon Simple Storage Service (Amazon S3)</a>.
+                   </p>
+                </dd>
+                <dt><a name="s3backed"></a>Amazon S3-Backed AMI
+                </dt>
+                <dd>
+                   <p>See <a href="#instancebacked">instance store-backed AMI</a>.
+                   </p>
+                </dd>
+                <dt><a name="glacier"></a>Amazon S3 Glacier
+                </dt>
+                <dd>
+                   
+                   <p>A secure, durable, and low-cost storage service for data archiving and long-term backup.
+                      You can reliably store large or small amounts of data
+                      for significantly less than on-premises solutions. Glacier is optimized for infrequently
+                      accessed data, where a retrieval time of several hours is
+                      suitable.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/glacier/" target="_blank">https://aws.amazon.com/glacier/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="securityhub"></a>AWS Security Hub
+                </dt>
+                <dd>
+                   
+                   <p>A service that provides a comprehensive view of the security state of your AWS resources.
+                      Security Hub collects security data from AWS accounts and
+                      services and helps you analyze your security trends to identify and prioritize the
+                      security issues across your AWS environment.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/security-hub/" target="_blank">https://aws.amazon.com/security-hub/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="silk"></a>Amazon Silk
+                </dt>
+                <dd>
+                   
+                   <p>A next-generation web browser available only on Fire OS tablets and phones. Built
+                      on a split architecture that divides processing between the
+                      client and the AWS Cloud, Amazon Silk is designed to create a faster, more responsive
+                      mobile browsing experience.
+                   </p>
+                   
+                </dd>
+                <dt><a name="SES"></a>Amazon Simple Email Service <abbr class="abbrev">(Amazon SES)</abbr></dt>
+                <dd>
+                   
+                   <p>An easy-to-use, cost-effective email solution for applications. </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ses/" target="_blank">https://aws.amazon.com/ses</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="SNS"></a>Amazon Simple Notification Service <abbr class="abbrev">(Amazon SNS)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service that enables applications, users, and devices to instantly send and
+                      receive notifications from the cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sns/" target="_blank">https://aws.amazon.com/sns</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonSimpleQueueService"></a>Amazon Simple Queue Service <abbr class="abbrev">(Amazon SQS)</abbr></dt>
+                <dd>
+                   
+                   <p>Reliable and scalable hosted queues for storing messages as they travel between computers.
+                      
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sqs/" target="_blank">https://aws.amazon.com/sqs</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonSimpleStorageService"></a>Amazon Simple Storage Service <abbr class="abbrev">(Amazon S3)</abbr></dt>
+                <dd>
+                   
+                   <p>Storage for the internet. You can use it to store and retrieve any amount of data
+                      at any time, from anywhere on the web.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/s3/" target="_blank">https://aws.amazon.com/s3</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="swf"></a>Amazon Simple Workflow Service <abbr class="abbrev">(Amazon SWF)</abbr></dt>
+                <dd>
+                   
+                   <p>A fully managed service that helps developers build, run, and scale background jobs
+                      that have parallel or sequential steps. Amazon SWF is like a
+                      state tracker and task coordinator in the cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/swf/" target="_blank">https://aws.amazon.com/swf/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonSumerian"></a>Amazon Sumerian
+                </dt>
+                <dd>
+                   
+                   <p>A set of tools for creating and running high-quality 3D, augmented reality (AR), and
+                      virtual reality (VR) applications on the web.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sumerian/" target="_blank">https://aws.amazon.com/sumerian/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonTextract"></a>Amazon Textract
+                </dt>
+                <dd>
+                   
+                   <p>A service that automatically extracts text and data from scanned documents. Amazon
+                      Textract goes beyond simple optical character recognition (OCR)
+                      to also identify the contents of fields in forms and information stored in tables.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/textract/" target="_blank">https://aws.amazon.com/textract/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonVirtualPrivateCloud"></a>Amazon Virtual Private Cloud <abbr class="abbrev">(Amazon VPC)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service for provisioning a logically isolated section of the AWS Cloud where
+                      you can launch AWS <a href="glos-chap.html#resource">resource</a>s in a virtual network that you define. You control your virtual networking environment,
+                      including selection of your own
+                      IP address range, creation of <a href="glos-chap.html#subnet">subnet</a>s, and configuration of <a href="glos-chap.html#routetable">route table</a>s and network gateways.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/vpc/" target="_blank">https://aws.amazon.com/vpc</a>.
+                   </p>
+                   
+                </dd>
+                <dt>Amazon VPC</dt>
+                <dd>
+                   <p>See <a href="#AmazonVirtualPrivateCloud">Amazon Virtual Private Cloud (Amazon VPC)</a>.
+                   </p>
+                </dd>
+                <dt><a name="amazonwebservices"></a>Amazon Web Services <abbr class="abbrev">(AWS)</abbr></dt>
+                <dd>
+                   
+                   <p>An infrastructure web services platform in the cloud for companies of all sizes.</p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank">https://aws.amazon.com/what-is-cloud-computing/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="workdocs"></a>Amazon WorkDocs
+                </dt>
+                <dd>
+                   
+                   <p>A managed, secure enterprise document storage and sharing service with administrative
+                      controls and feedback capabilities.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/workdocs/" target="_blank">https://aws.amazon.com/workdocs/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="worklink"></a>Amazon WorkLink
+                </dt>
+                <dd>
+                   
+                   <p>A cloud-based service that provides secure access to internal websites and web apps
+                      from mobile devices.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/worklink/" target="_blank">https://aws.amazon.com/worklink/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="workmail"></a>Amazon WorkMail
+                </dt>
+                <dd>
+                   
+                   <p>A managed, secure business email and calendar service with support for existing desktop
+                      and mobile email clients. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/workmail/" target="_blank">https://aws.amazon.com/workmail/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="workspaces"></a>Amazon WorkSpaces
+                </dt>
+                <dd>
+                   
+                   <p>A managed, secure desktop computing service for provisioning cloud-based desktops
+                      and providing users access to documents, applications, and
+                      <a href="glos-chap.html#resource">resource</a>s from supported devices.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/workspaces/" target="_blank">https://aws.amazon.com/workspaces/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="wam"></a>Amazon WorkSpaces Application Manager <abbr class="abbrev">(Amazon WAM)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service for deploying and managing applications for Amazon WorkSpaces. Amazon
+                      WAM accelerates software deployment, upgrades, patching, and retirement by
+                      packaging Windows desktop applications into virtualized application containers. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/workspaces/applicationmanager" target="_blank">https://aws.amazon.com/workspaces/applicationmanager</a>.
+                   </p>
+                   
+                </dd>
+                <dt>AMI</dt>
+                <dd>
+                   <p>See <a href="#AmazonMachineImage">Amazon Machine Image (AMI)</a>.
+                   </p>
+                </dd>
+                <dt><a name="analysisscheme"></a>analysis scheme
+                </dt>
+                <dd>
+                   
+                   
+                   <p><a href="glos-chap.html#cloudSearch">Amazon CloudSearch</a>: Language-specific text analysis options that are applied to a text field to control
+                      stemming and configure stopwords and synonyms. 
+                   </p>
+                   
+                </dd>
+                <dt><a name="application"></a>application
+                </dt>
+                <dd>
+                   
+                   
+                   <p><a href="glos-chap.html#Beanstalk">AWS Elastic Beanstalk</a>: A logical collection of components, including environments, versions, and environment
+                      configurations. An application is conceptually similar to a folder.
+                   </p>
+                   
+                   <p><a href="glos-chap.html#AWSCodeDeploy">AWS CodeDeploy</a>: A name that uniquely identifies the application to be deployed. AWS CodeDeploy
+                      uses this name to ensure the correct combination of revision, deployment configuration,
+                      and deployment group are referenced during a
+                      deployment.
+                   </p>
+                   
+                </dd>
+                <dt><a name="ApplicationAutoScaling"></a>Application Auto Scaling
+                </dt>
+                <dd>
+                   
+                   <p>A web service that enables you to configure automatic scaling for AWS resources beyond
+                      Amazon EC2, such as Amazon ECS services, Amazon EMR clusters, and
+                      DynamoDB tables.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/autoscaling/" target="_blank">https://aws.amazon.com/autoscaling/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AppBilling"></a>Application Billing
+                </dt>
+                <dd>
+                   
+                   
+                   <p>The location where your customers manage the Amazon DevPay products they've purchased.
+                      The web address is <a href="http://www.amazon.com/dp-applications" target="_blank">http://www.amazon.com/dp-applications</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="applicationrevision"></a>application revision
+                </dt>
+                <dd>
+                   
+                   <p><a href="glos-chap.html#AWSCodeDeploy">AWS CodeDeploy</a>: An archive file containing source content—such as source code, webpages,
+                      executable files, and deployment scripts—along with an <a href="glos-chap.html#applicationspecificationfile">application specification file</a>. Revisions are stored in <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>
+                      <a href="glos-chap.html#bucket">bucket</a>s or <a href="glos-chap.html#github">GitHub</a> repositories. For Amazon S3, a revision is
+                      uniquely identified by its Amazon S3 object key and its ETag, version, or both. For
+                      GitHub, a revision is uniquely identified by its commit ID.
+                   </p>
+                   
+                </dd>
+                <dt><a name="applicationspecificationfile"></a>application specification file
+                </dt>
+                <dd>
+                   
+                   <p><a href="glos-chap.html#AWSCodeDeploy">AWS CodeDeploy</a>: A YAML-formatted file used to map the source files in an application revision
+                      to destinations on the instance. The file is also used to specify custom permissions
+                      for deployed files and specify scripts to be run on each
+                      instance at various stages of the deployment process.
+                   </p>
+                   
+                </dd>
+                <dt><a name="appversion"></a>application version
+                </dt>
+                <dd>
+                   
+                   
+                   <p><a href="glos-chap.html#Beanstalk">AWS Elastic Beanstalk</a>: A specific, labeled iteration of an application that represents a functionally
+                      consistent set of deployable application code. A version points to an <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a> object (a JAVA WAR file) that contains the application code. 
+                   </p>
+                   
+                </dd>
+                <dt>AppSpec file</dt>
+                <dd>
+                   <p>See <a href="#applicationspecificationfile">application specification file</a>.
+                   </p>
+                </dd>
+                <dt><a name="AUC"></a>AUC
+                </dt>
+                <dd>
+                   
+                   <p>Area Under a Curve. An industry-standard metric to evaluate the quality of a binary
+                      classification machine learning model. AUC measures the
+                      ability of the model to predict a higher score for positive examples, those that are
+                      “correct,” than for negative examples, those that are
+                      “incorrect.” The AUC metric returns a decimal value from 0 to 1. AUC values near 1
+                      indicate an ML model that is highly accurate.
+                   </p>
+                   
+                </dd>
+                <dt>ARN</dt>
+                <dd>
+                   <p>See <a href="#ARN">Amazon Resource Name (ARN)</a>.
+                   </p>
+                </dd>
+                <dt><a name="artifact"></a>artifact
+                </dt>
+                <dd>
+                   
+                   <p><a href="glos-chap.html#AWSCodePipeline">AWS CodePipeline</a>: A copy of the files or changes that will be worked upon by the pipeline.
+                      
+                   </p>
+                   
+                </dd>
+                <dt><a name="asymmetric_encryption"></a>asymmetric encryption
+                </dt>
+                <dd>
+                   
+                   <p>
+                      <a href="glos-chap.html#encrypt">Encryption</a> that uses both a public key and a private key.
+                   </p>
+                   
+                </dd>
+                <dt><a name="asynchronousbounce"></a>asynchronous bounce
+                </dt>
+                <dd>
+                   
+                   
+                   <p>A type of <a href="glos-chap.html#bounce">bounce</a> that occurs when a <a href="glos-chap.html#receiver">receiver</a> initially
+                      accepts an email message for delivery and then subsequently fails to deliver it.
+                   </p>
+                   
+                </dd>
+                <dt><a name="atomic-counter"></a>atomic counter
+                </dt>
+                <dd>
+                   
+                   <p>DynamoDB: A method of incrementing or decrementing the value of an existing attribute
+                      without interfering with other write requests.
+                   </p>
+                   
+                </dd>
+                <dt><a name="attribute"></a>attribute
+                </dt>
+                <dd>
+                   
+                   <p>A fundamental data element, something that does not need to be broken down any further.
+                      In DynamoDB, attributes are similar in many ways to
+                      fields or columns in other database systems.
+                   </p>
+                   
+                   <p> Amazon Machine Learning: A unique, named property within an observation in a dataset.
+                      In tabular data, such as spreadsheets or comma-separated values (.csv)
+                      files, the column headings represent the attributes, and the rows contain values for
+                      each attribute.
+                   </p>
+                   
+                </dd>
+                <dt>Aurora</dt>
+                <dd>
+                   <p>See <a href="#aurora">Amazon Aurora</a>.
+                   </p>
+                </dd>
+                <dt><a name="authenticated_encryption"></a>authenticated encryption
+                </dt>
+                <dd>
+                   
+                   <p><a href="glos-chap.html#encrypt">Encryption</a> that provides confidentiality, data integrity, and authenticity assurances
+                      of the encrypted data.
+                   </p>
+                   
+                </dd>
+                <dt><a name="authentication"></a>authentication
+                </dt>
+                <dd>
+                   
+                   <p>The process of proving your identity to a system.</p>
+                   
+                </dd>
+                <dt><a name="AutoScalingGroup"></a>Auto Scaling group
+                </dt>
+                <dd>
+                   
+                   <p>A representation of multiple <a href="glos-chap.html#ec2instance">EC2 instance</a>s that share similar characteristics, and that are
+                      treated as a logical grouping for the purposes of instance scaling and management.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AZ"></a>Availability Zone
+                </dt>
+                <dd>
+                   
+                   
+                   <p>A distinct location within a <a href="glos-chap.html#region">Region</a> that is insulated from failures in other Availability Zones, and
+                      provides inexpensive, low-latency network connectivity to other Availability Zones
+                      in the same Region.
+                   </p>
+                   
+                </dd>
+                <dt>AWS</dt>
+                <dd>
+                   <p>See <a href="#amazonwebservices">Amazon Web Services (AWS)</a>.
+                   </p>
+                </dd>
+                <dt><a name="ApplicationDiscoveryService"></a>AWS Application Discovery Service
+                </dt>
+                <dd>
+                   
+                   <p>A web service that helps you plan to migrate to AWS by identifying IT assets in a
+                      data center—including servers, virtual machines,
+                      applications, application dependencies, and network infrastructure. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/about-aws/whats-new/2016/04/aws-application-discovery-service/" target="_blank">https://aws.amazon.com/about-aws/whats-new/2016/04/aws-application-discovery-service/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSAppSync"></a>AWS AppSync
+                </dt>
+                <dd>
+                   
+                   <p>An enterprise level, fully managed GraphQL service with real-time data synchronization
+                      and offline programming features.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/appsync/" target="_blank">https://aws.amazon.com/appsync/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSAutoScaling"></a>AWS Auto Scaling
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed service that enables you to quickly discover the scalable AWS resources
+                      that are part of your application and configure
+                      dynamic scaling.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/autoscaling/" target="_blank">https://aws.amazon.com/autoscaling/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awsbackup"></a>AWS Backup
+                </dt>
+                <dd>
+                   
+                   <p>A managed backup service that you can use to centralize and automate the backup of
+                      data across AWS services in the cloud and on premises.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/backup/" target="_blank">https://aws.amazon.com/backup/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="billing"></a>AWS Billing and Cost Management
+                </dt>
+                <dd>
+                   
+                   <p>The AWS Cloud computing model in which you pay for services on demand and use as much
+                      or as little as you need. While <a href="glos-chap.html#resource">resource</a>s are active under your account, you pay for the cost of allocating those resources.
+                      You also pay
+                      for any incidental usage associated with those resources, such as data transfer or
+                      allocated storage.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/billing/new-user-faqs/" target="_blank">https://aws.amazon.com/billing/new-user-faqs/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="blockchain-templates"></a>AWS Blockchain Templates
+                </dt>
+                <dd>
+                   
+                   <p>A service for creating and deploying open-source blockchain frameworks on AWS, such
+                      as Ethereum and Hyperledger Fabric.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/blockchain/templates/" target="_blank">https://aws.amazon.com/blockchain/templates/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="acm"></a>AWS Certificate Manager <abbr class="abbrev">(ACM)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service for provisioning, managing, and deploying Secure Sockets Layer/<a href="glos-chap.html#transportlayersecurity">Transport Layer Security</a> (SSL/TLS) certificates for use with AWS services.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/certificate-manager/" target="_blank">https://aws.amazon.com/certificate-manager/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="acm-pca"></a>AWS Certificate Manager Private Certificate Authority <abbr class="abbrev">(ACM PCA)</abbr></dt>
+                <dd>
+                   
+                   <p>A hosted private certificate authority service for issuing and revoking private digital
+                      <a href="glos-chap.html#certificate">certificate</a>s.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/certificate-manager/private-certificate-authority/" target="_blank">https://aws.amazon.com/certificate-manager/private-certificate-authority/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSCDK"></a>AWS Cloud Development Kit (AWS CDK)
+                </dt>
+                <dd>
+                   
+                   <p>An open-source software development framework 
+                      for defining your cloud infrastructure in code and provisioning 
+                      it through AWS CloudFormation.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cdk/" target="_blank">https://aws.amazon.com/cdk/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="cloudmap"></a>AWS Cloud Map
+                </dt>
+                <dd>
+                   
+                   <p>A service that you use to create and maintain
+                      a map of the backend services and resources that your applications
+                      depend on. AWS Cloud Map lets you name and discover your cloud resources.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloud-map" target="_blank">https://aws.amazon.com/cloud-map</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSCloud9"></a>AWS Cloud9
+                </dt>
+                <dd>
+                   
+                   <p>A cloud-based integrated development environment (IDE) that you use to write, run,
+                      and debug code.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloud9/" target="_blank">https://aws.amazon.com/cloud9/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="CloudFormation"></a>AWS CloudFormation
+                </dt>
+                <dd>
+                   
+                   <p>A service for writing or changing templates that create and delete related AWS <a href="glos-chap.html#resource">resource</a>s together
+                      as a unit.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloudformation/" target="_blank">https://aws.amazon.com/cloudformation</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="cloudhsm"></a>AWS CloudHSM
+                </dt>
+                <dd>
+                   
+                   <p>A web service that helps you meet corporate, contractual, and regulatory compliance
+                      requirements for data security by using dedicated hardware
+                      security module (HSM) appliances within the AWS Cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloudhsm/" target="_blank">https://aws.amazon.com/cloudhsm/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="cloudtrail"></a>AWS CloudTrail
+                </dt>
+                <dd>
+                   
+                   <p>A web service that records AWS API calls for your account and delivers log files to
+                      you. The recorded information includes the identity of
+                      the API caller, the time of the API call, the source IP address of the API caller,
+                      the request parameters, and the response elements returned by
+                      the AWS service.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cloudtrail/" target="_blank">https://aws.amazon.com/cloudtrail/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSCodeBuild"></a>AWS CodeBuild
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed continuous integration service that compiles source code, runs tests,
+                      and produces software packages that are ready to deploy.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/codebuild/" target="_blank">https://aws.amazon.com/codebuild</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSCodeCommit"></a>AWS CodeCommit
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed source control service that makes it easy for companies to host secure
+                      and highly scalable private Git repositories.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/codecommit/" target="_blank">https://aws.amazon.com/codecommit</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSCodeDeploy"></a>AWS CodeDeploy
+                </dt>
+                <dd>
+                   
+                   <p>A service that automates code deployments to any instance, including <a href="glos-chap.html#ec2instance">EC2 instance</a>s and <a href="glos-chap.html#instance">instance</a>s running on-premises.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/codedeploy/" target="_blank">https://aws.amazon.com/codedeploy</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSCodeDeployagent"></a>AWS CodeDeploy agent
+                </dt>
+                <dd>
+                   
+                   <p>A software package that, when installed and configured on an instance, enables that
+                      instance to be used in CodeDeploy deployments.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSCodePipeline"></a>AWS CodePipeline
+                </dt>
+                <dd>
+                   
+                   <p>A continuous delivery service for fast and reliable application updates.</p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/codepipeline/" target="_blank">https://aws.amazon.com/codepipeline</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awscli"></a>AWS Command Line Interface <abbr class="abbrev">(AWS CLI)</abbr></dt>
+                <dd>
+                   
+                   <p>A unified downloadable and configurable tool for managing AWS services. Control multiple
+                      AWS services from the command line and automate
+                      them through scripts.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/cli/" target="_blank">https://aws.amazon.com/cli/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="config"></a>AWS Config
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed service that provides an AWS <a href="glos-chap.html#resource">resource</a> inventory, configuration history, and
+                      configuration change notifications for better security and governance. You can create
+                      rules that automatically check the configuration of AWS
+                      resources that AWS Config records.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/config/" target="_blank">https://aws.amazon.com/config/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSDatabaseMigrationService"></a>AWS Database Migration Service
+                </dt>
+                <dd>
+                   
+                   <p>A web service that can help you migrate data to and from many widely used commercial
+                      and open-source databases.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/dms" target="_blank">https://aws.amazon.com/dms</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AmazonDataPipeline"></a>AWS Data Pipeline
+                </dt>
+                <dd>
+                   
+                   <p>A web service for processing and moving data between different AWS compute and storage
+                      services, as well as on-premises data sources, at
+                      specified intervals.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/datapipeline" target="_blank">https://aws.amazon.com/datapipeline</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSDeviceFarm"></a>AWS Device Farm
+                </dt><abbr class="abbrev">(Device Farm)</abbr><dd>
+                   
+                   <p>An app testing service that allows developers to test Android, iOS, and Fire OS devices
+                      on real, physical phones and tablets that are hosted
+                      by AWS.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/device-farm/" target="_blank">https://aws.amazon.com/device-farm</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSDirectConnect"></a>AWS Direct Connect
+                </dt>
+                <dd>
+                   
+                   <p>A web service that simplifies establishing a dedicated network connection from your
+                      premises to AWS. Using AWS Direct Connect, you can establish
+                      private connectivity between AWS and your data center, office, or colocation environment.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/directconnect/" target="_blank"> https://aws.amazon.com/directconnect</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSDirectoryService"></a>AWS Directory Service
+                </dt>
+                <dd>
+                   
+                   <p>A managed service for connecting your AWS <a href="glos-chap.html#resource">resource</a>s to an existing on-premises Microsoft Active
+                      Directory or to set up and operate a new, standalone directory in the AWS Cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/directoryservice/" target="_blank"> https://aws.amazon.com/directoryservice</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="Beanstalk"></a>AWS Elastic Beanstalk
+                </dt>
+                <dd>
+                   
+                   <p>A web service for deploying and managing applications in the AWS Cloud without worrying
+                      about the infrastructure that runs those
+                      applications.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/elasticbeanstalk/" target="_blank">https://aws.amazon.com/elasticbeanstalk</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="mediaconnect"></a>AWS Elemental MediaConnect
+                </dt>
+                <dd>
+                   
+                   <p>A service that lets broadcasters and other premium video providers reliably ingest
+                      live video into the AWS Cloud and distribute it to multiple destinations inside or
+                      outside the AWS Cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/mediaconnect/" target="_blank">https://aws.amazon.com/mediaconnect</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSElementalMediaConvert"></a>AWS Elemental MediaConvert
+                </dt>
+                <dd>
+                   
+                   <p>A file-based video conversion service that transforms media into formats required
+                      for traditional broadcast and for internet streaming to
+                      multi-screen devices.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/mediaconvert" target="_blank">https://aws.amazon.com/mediaconvert</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSElementalMediaLive"></a>AWS Elemental MediaLive
+                </dt>
+                <dd>
+                   
+                   <p>A video service that lets you create live outputs for broadcast and streaming
+                      delivery.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/medialive" target="_blank">https://aws.amazon.com/medialive</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSElementalMediaPackage"></a>AWS Elemental MediaPackage
+                </dt>
+                <dd>
+                   
+                   <p>A just-in-time packaging and origination service that lets you format highly secure
+                      and reliable live outputs for a variety of devices.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/mediapackage" target="_blank">https://aws.amazon.com/mediapackage</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSElementalMediaStore"></a>AWS Elemental MediaStore
+                </dt>
+                <dd>
+                   
+                   <p>A storage service optimized for media that provides the performance, consistency,
+                      and low latency required to deliver live and on-demand video
+                      content at scale.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/mediastore" target="_blank">https://aws.amazon.com/mediastore</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSElementalMediaTailor"></a>AWS Elemental MediaTailor
+                </dt>
+                <dd>
+                   
+                   <p>A video service that lets you serve targeted ads to viewers while maintaining broadcast
+                      quality in over-the-top (OTT) video
+                      applications.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/mediatailor" target="_blank">https://aws.amazon.com/mediatailor</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="firewallmanager"></a>AWS Firewall Manager
+                </dt>
+                <dd>
+                   
+                   <p>A service that you use with AWS WAF to simplify your AWS WAF administration
+                      and maintenance tasks across multiple accounts and resources. With
+                      AWS Firewall Manager, you set up your firewall rules just once. The service
+                      automatically applies your rules across your accounts and resources, even
+                      as you add new resources.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/firewall-manager/" target="_blank">https://aws.amazon.com/firewall-manager</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="globalaccelerator"></a>AWS Global Accelerator
+                </dt>
+                <dd>
+                   
+                   <p>A network layer service that you use to create accelerators
+                      that direct traffic to optimal endpoints over the AWS global network. This improves
+                      the
+                      availability and performance of your internet applications that are used by a global
+                      audience.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/global-accelerator/" target="_blank">https://aws.amazon.com/global-accelerator</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="Glue"></a>AWS Glue
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed <a href="glos-chap.html#extracttransformload">extract, transform, and load (ETL)</a> service that you can use to catalog data and load
+                      it for analytics. With AWS Glue, you can discover your data, develop scripts to transform
+                      sources into targets, and schedule and run ETL jobs in
+                      a serverless environment.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/glue/" target="_blank">https://aws.amazon.com/glue</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="govcloud-us"></a>AWS GovCloud (US)
+                </dt>
+                <dd>
+                   
+                   <p>An isolated AWS Region designed to host sensitive workloads in the cloud, ensuring
+                      that this work meets the US government's regulatory and
+                      compliance requirements. The AWS GovCloud (US) Region adheres to United States International
+                      Traffic in Arms Regulations (ITAR), Federal Risk and
+                      Authorization Management Program (FedRAMP) requirements, Department of Defense (DOD)
+                      Cloud Security Requirements Guide (SRG) Levels 2 and 4, and
+                      Criminal Justice Information Services (CJIS) Security Policy requirements.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/govcloud-us/" target="_blank">https://aws.amazon.com/govcloud-us/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="IAM"></a>AWS Identity and Access Management <abbr class="abbrev">(IAM)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service that enables <a href="glos-chap.html#amazonwebservices">Amazon Web Services (AWS)</a> customers to manage users and user
+                      permissions within AWS.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iam/" target="_blank">https://aws.amazon.com/iam</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSImportExport"></a>AWS Import/Export
+                </dt>
+                <dd>
+                   
+                   <p>A service for transferring large amounts of data between AWS and portable storage
+                      devices. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/importexport/" target="_blank">https://aws.amazon.com/importexport</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSIoT"></a>AWS IoT Core
+                </dt>
+                <dd>
+                   
+                   <p>A managed cloud platform that lets connected devices easily and securely interact
+                      with cloud applications and other devices.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iot/" target="_blank">https://aws.amazon.com/iot</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSIoTOneClick"></a>AWS IoT 1-Click
+                </dt>
+                <dd>
+                   
+                   <p>A service that enables simple devices to trigger AWS Lambda functions that can
+                      execute an action.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iot-1-click/" target="_blank">https://aws.amazon.com/iot-1-click</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSIoTAnalytics"></a>AWS IoT Analytics
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed service used to run sophisticated analytics on massive volumes of
+                      IoT data.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iot-analytics/" target="_blank">https://aws.amazon.com/iot-analytics</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSIoTDeviceDefender"></a>AWS IoT Device Defender
+                </dt>
+                <dd>
+                   
+                   <p>An AWS IoT security service that allows you to audit the configuration of your
+                      devices, monitor your connected devices to detect abnormal behavior, and to mitigate
+                      security risks.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iot-device-defender/" target="_blank">https://aws.amazon.com/iot-device-defender</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSIoTDeviceManagement"></a>AWS IoT Device Management
+                </dt>
+                <dd>
+                   
+                   <p>A service used to securely onboard, organize, monitor, and remotely manage IoT devices
+                      at scale.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iot-device-management/" target="_blank">https://aws.amazon.com/iot-device-management</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSIoTEvents"></a>AWS IoT Events
+                </dt>
+                <dd>
+                   
+                   <p>A fully managed AWS IoT service that makes it easy to detect and respond to events
+                      from IoT sensors and applications.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iot-events/" target="_blank">https://aws.amazon.com/iot-events</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="Greengrass"></a>AWS IoT Greengrass
+                </dt>
+                <dd>
+                   
+                   <p>Software that lets you run local compute, messaging, data caching, sync, and ML inference
+                      capabilities for connected devices in a secure way.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/greengrass/" target="_blank">https://aws.amazon.com/greengrass</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSIoTThingsGraph"></a>AWS IoT Things Graph
+                </dt>
+                <dd>
+                   
+                   <p>A service that makes it easy to visually connect different devices and web services
+                      to build IoT applications.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iot-things-graph/" target="_blank">https://aws.amazon.com/iot-things-graph</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWS_KMS"></a>AWS Key Management Service <abbr class="abbrev">(AWS KMS)</abbr></dt>
+                <dd>
+                   
+                   <p>A managed service that simplifies the creation and control of <a href="glos-chap.html#encrypt">encryption</a> keys that are
+                      used to encrypt data.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/kms/" target="_blank"> https://aws.amazon.com/kms</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="lambda"></a>AWS Lambda
+                </dt>
+                <dd>
+                   
+                   <p>A web service that lets you run code without provisioning or managing servers. You
+                      can run code for virtually any type of application or
+                      backend service with zero administration. You can set up your code to automatically
+                      trigger from other AWS services or call it directly from
+                      any web or mobile app.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/lambda/" target="_blank">https://aws.amazon.com/lambda/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWS_managed_key"></a>AWS managed key
+                </dt>
+                <dd>
+                   
+                   <p>One type of <a href="glos-chap.html#customer_master_key">customer master key (CMK)</a> in <a href="glos-chap.html#AWS_KMS">AWS Key Management Service (AWS KMS)</a>. 
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWS_managed_policy"></a>AWS managed policy
+                </dt>
+                <dd>
+                   
+                   <p>An <a href="glos-chap.html#IAM">IAM</a>
+                      <a href="glos-chap.html#managed_policy">managed policy</a> that is created and managed by AWS.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSManagementConsole"></a>AWS Management Console
+                </dt>
+                <dd>
+                   
+                   <p>A graphical interface to manage compute, storage, and other cloud <a href="glos-chap.html#resource">resource</a>s.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/console/" target="_blank">https://aws.amazon.com/console</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="mgtportal"></a>AWS Management Portal for vCenter
+                </dt>
+                <dd>
+                   
+                   <p>A web service for managing your AWS <a href="glos-chap.html#resource">resource</a>s using VMware vCenter. You install the portal as a
+                      vCenter plugin within your existing vCenter environment. Once installed, you can migrate
+                      VMware VMs to <a href="glos-chap.html#ec2">Amazon EC2</a> and manage AWS resources from within vCenter.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ec2/vcenter-portal/" target="_blank">https://aws.amazon.com/ec2/vcenter-portal/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="marketplace"></a>AWS Marketplace
+                </dt>
+                <dd>
+                   
+                   <p>A web portal where qualified partners market and sell their software to AWS customers.
+                      AWS Marketplace is an online software store that
+                      helps customers find, buy, and immediately start using the software and services that
+                      run on AWS.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/partners/aws-marketplace/" target="_blank">https://aws.amazon.com/partners/aws-marketplace/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSMobileHub"></a>AWS Mobile Hub
+                </dt><abbr class="abbrev">(Mobile Hub)</abbr><dd>
+                   
+                   <p>An integrated console that for building, testing, and monitoring mobile apps.</p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/console/" target="_blank">https://aws.amazon.com/mobile</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="mobilesdk"></a>AWS Mobile SDK
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit whose libraries, code examples, and documentation help
+                      you build high quality mobile apps for the iOS, Android,
+                      Fire OS, Unity, and Xamarin platforms.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/mobile/sdk" target="_blank">https://aws.amazon.com/mobile/sdk</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="opsworks"></a>AWS OpsWorks
+                </dt>
+                <dd>
+                   
+                   <p>A configuration management service that helps you use Chef to configure and operate
+                      groups of instances and applications. You can define the
+                      application’s architecture and the specification of each component including package
+                      installation, software configuration, and <a href="glos-chap.html#resource">resource</a>s such as storage. You can automate tasks based on time, load, lifecycle events, and
+                      more.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/opsworks/" target="_blank">https://aws.amazon.com/opsworks/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awsorganizations"></a>AWS Organizations
+                </dt>
+                <dd>
+                   
+                   <p>An account management service that enables you to consolidate multiple AWS accounts
+                      into an organization that you create and centrally manage. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/organizations/" target="_blank">https://aws.amazon.com/organizations/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awsram"></a>AWS Resource Access Manager
+                </dt>
+                <dd>
+                   
+                   <p>A service that lets you share your resources with any AWS account or organization
+                      in AWS Organizations.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/ram/" target="_blank">https://aws.amazon.com/ram/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="parallelcluster"></a>AWS ParallelCluster
+                </dt>
+                <dd>
+                   
+                   <p>An AWS supported open source cluster management tool that helps you to deploy and
+                      manage high performance computing (HPC) clusters in the AWS Cloud.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkcpp"></a>AWS SDK for C++
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit for that provides C++ APIs for many AWS services including
+                      <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>, <a href="glos-chap.html#ec2">Amazon EC2</a>, <a href="glos-chap.html#dynamodb">Amazon DynamoDB</a>, and more. The single, downloadable package includes the AWS C++ library, code examples,
+                      and documentation.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sdk-for-cpp/" target="_blank">https://aws.amazon.com/sdk-for-cpp/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkgo"></a>AWS SDK for Go
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit for integrating your Go application with the full suite
+                      of AWS services.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sdk-for-go/" target="_blank">https://aws.amazon.com/sdk-for-go/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkjava"></a>AWS SDK for Java
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit that provides Java APIs for many AWS services including
+                      <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>, <a href="glos-chap.html#ec2">Amazon EC2</a>, <a href="glos-chap.html#dynamodb">Amazon DynamoDB</a>, and more. The single, downloadable package includes the AWS Java library, code examples,
+                      and documentation. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sdk-for-java/" target="_blank">https://aws.amazon.com/sdk-for-java/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkjavabrowser"></a>AWS SDK for JavaScript in the Browser
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit for accessing AWS services from JavaScript code running
+                      in the browser. Authenticate users through Facebook,
+                      Google, or Login with Amazon using web identity federation. Store application data
+                      in <a href="glos-chap.html#dynamodb">Amazon DynamoDB</a>, and
+                      save user files to <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>.
+                   </p>
+                   
+                   <p>See Also <a href="https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/">https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkjavanodejs"></a>AWS SDK for JavaScript in Node.js
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit for accessing AWS services from JavaScript in Node.js.
+                      The SDK provides JavaScript objects for AWS services,
+                      including <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>, <a href="glos-chap.html#ec2">Amazon EC2</a>, <a href="glos-chap.html#dynamodb">Amazon DynamoDB</a>, and <a href="glos-chap.html#swf">Amazon Simple Workflow Service (Amazon SWF)</a> . The single,
+                      downloadable package includes the AWS JavaScript library and documentation.
+                   </p>
+                   
+                   <p>See Also <a href="https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/">https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkdotnet"></a>AWS SDK for .NET
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit that provides .NET API actions for AWS services including
+                      <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>, <a href="glos-chap.html#ec2">Amazon EC2</a>, <a href="glos-chap.html#IAM">IAM</a>, and more. You can download the SDK as multiple service-specific packages on NuGet.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sdk-for-net/" target="_blank">https://aws.amazon.com/sdk-for-net/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkphp"></a>AWS SDK for PHP
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit and open-source PHP library for integrating your PHP application
+                      with AWS services like <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>, <a href="glos-chap.html#glacier">Amazon S3 Glacier</a>, and <a href="glos-chap.html#dynamodb">Amazon DynamoDB</a>.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sdk-for-php/" target="_blank">https://aws.amazon.com/sdk-for-php/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkpython"></a>AWS SDK for Python (Boto)
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit for using Python to access AWS services like <a href="glos-chap.html#ec2">Amazon EC2</a>, <a href="glos-chap.html#AmazonElasticMapReduce">Amazon EMR</a>, <a href="glos-chap.html#AutoScaling">Amazon EC2 Auto Scaling</a>, <a href="glos-chap.html#AmazonKinesis">Amazon Kinesis</a>, <a href="glos-chap.html#lambda">AWS Lambda</a>, and
+                      more.
+                   </p>
+                   
+                   <p>See Also <a href="http://boto.readthedocs.org/en/latest/" target="_blank">http://boto.readthedocs.org/en/latest/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="sdkruby"></a>AWS SDK for Ruby
+                </dt>
+                <dd>
+                   
+                   <p>A software development kit for accessing AWS services from Ruby. The SDK provides
+                      Ruby classes for many AWS services including <a href="glos-chap.html#AmazonSimpleStorageService">Amazon S3</a>, <a href="glos-chap.html#ec2">Amazon EC2</a>, <a href="glos-chap.html#dynamodb">Amazon DynamoDB</a>. and more. The single, downloadable package includes the AWS Ruby Library
+                      and documentation.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/sdk-for-ruby/" target="_blank">https://aws.amazon.com/sdk-for-ruby/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="STS"></a>AWS Security Token Service <abbr class="abbrev">(AWS STS)</abbr></dt>
+                <dd>
+                   
+                   <p>A web service for requesting temporary, limited-privilege credentials for <a href="glos-chap.html#IAM">AWS Identity and Access Management (IAM)</a> users or for users that
+                      you authenticate (<a href="glos-chap.html#fed_identity">federated users</a>).
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/iam/" target="_blank">https://aws.amazon.com/iam/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="servicecatalog"></a>AWS Service Catalog
+                </dt>
+                <dd>
+                   
+                   <p>A web service that helps organizations create and manage catalogs of IT services that
+                      are approved for use on AWS. These IT services can
+                      include everything from virtual machine images, servers, software, and databases to
+                      complete multitier application architectures.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/servicecatalog/" target="_blank">https://aws.amazon.com/servicecatalog/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="shield"></a>AWS Shield
+                </dt>
+                <dd>
+                   
+                   <p>A service that helps to protect your resources—such as Amazon EC2 instances, Elastic
+                      Load Balancing
+                      load balancers, Amazon CloudFront distributions, and Route&nbsp;53 hosted zones—against
+                      DDoS attacks.
+                      AWS Shield is automatically included at no extra cost beyond what you already pay
+                      for AWS WAF
+                      and your other AWS services. For added protection against DDoS attacks, AWS offers
+                      AWS Shield Advanced. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/shield/" target="_blank">https://aws.amazon.com/shield</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="aws-sso"></a>AWS Single Sign-On
+                </dt>
+                <dd>
+                   
+                   <p>A cloud-based service that simplifies managing SSO access to AWS accounts and business
+                      applications. You can control SSO access and user
+                      permissions across all your AWS accounts in AWS Organizations.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/single-sign-on/" target="_blank">https://aws.amazon.com/single-sign-on/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="AWSStepFunctions"></a>AWS Step Functions
+                </dt>
+                <dd>
+                   
+                   <p>A web service that coordinates the components of distributed applications as a series
+                      of steps in a visual workflow.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/step-functions/" target="_blank">https://aws.amazon.com/step-functions/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="snowball"></a>AWS Snowball
+                </dt>
+                <dd>
+                   
+                   <p>A petabyte-scale data transport solution that uses devices designed to be secure to
+                      transfer large amounts of data into and out of the AWS
+                      Cloud.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/importexport/" target="_blank">https://aws.amazon.com/snowball</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="storagegateway"></a>AWS Storage Gateway
+                </dt>
+                <dd>
+                   
+                   <p>A web service that connects an on-premises software appliance with cloud-based storage.
+                      AWS Storage Gateway provides seamless and secure integration
+                      between an organization’s on-premises IT environment and AWS storage infrastructure.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/storagegateway/" target="_blank">https://aws.amazon.com/storagegateway/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="toolkiteclipse"></a>AWS Toolkit for Eclipse
+                </dt>
+                <dd>
+                   
+                   <p>An open-source plugin for the Eclipse Java integrated development environment (IDE)
+                      that makes it easier to develop, debug, and deploy Java applications using
+                      Amazon Web Services.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/eclipse/" target="_blank">https://aws.amazon.com/eclipse/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="toolkitjetbrains"></a>AWS Toolkit for JetBrains
+                </dt>
+                <dd>
+                   
+                   <p>An open-source plugin for the integrated development environments (IDEs) from JetBrains
+                      that makes it easier to develop, debug, and deploy serverless applications using Amazon
+                      Web Services.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/intellij/" target="_blank">https://aws.amazon.com/intellij/</a>, <a href="https://aws.amazon.com/pycharm/" target="_blank">https://aws.amazon.com/pycharm/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="toolkitvisualstudio"></a>AWS Toolkit for Visual Studio
+                </dt>
+                <dd>
+                   
+                   <p>An extension for Visual Studio that helps in developing, debugging, and deploying
+                      .NET applications using Amazon Web Services. 
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/visualstudio/" target="_blank">https://aws.amazon.com/visualstudio/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="toolkitvscode"></a>AWS Toolkit for Visual Studio Code
+                </dt>
+                <dd>
+                   
+                   <p>An open-source plugin for the Visual Studio Code (VS Code) integrated development
+                      environment (IDE) that makes it easier to develop, debug, and deploy .NET applications
+                      using Amazon Web Services.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/visualstudiocode/" target="_blank">https://aws.amazon.com/visualstudiocode/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="toolspowershell"></a>AWS Tools for Windows PowerShell
+                </dt>
+                <dd>
+                   
+                   <p>A set of PowerShell cmdlets to help developers and administrators manage their AWS
+                      services from the Windows PowerShell scripting
+                      environment.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/powershell/" target="_blank">https://aws.amazon.com/powershell/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awsvsts"></a>AWS Tools for Microsoft Visual Studio Team Services
+                </dt>
+                <dd>
+                   
+                   <p>Provides tasks you can use in build and release&nbsp;definitions in VSTS to interact with
+                      AWS services.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/vsts/" target="_blank">https://aws.amazon.com/vsts/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="trustedadvisor"></a>AWS Trusted Advisor
+                </dt>
+                <dd>
+                   
+                   <p>A web service that inspects your AWS environment and makes recommendations for saving
+                      money, improving system availability and performance,
+                      and helping to close security gaps.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/premiumsupport/trustedadvisor/" target="_blank">https://aws.amazon.com/premiumsupport/trustedadvisor/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awsvpncloudhub"></a>AWS VPN CloudHub
+                </dt>
+                <dd>
+                   
+                   <p>Enables secure communication between branch offices using a simple hub-and-spoke model,
+                      with or without a <a href="glos-chap.html#VPC">VPC</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awswaf"></a>AWS WAF
+                </dt>
+                <dd>
+                   
+                   <p>A web application firewall service that controls access to content by allowing or
+                      blocking web requests based on criteria that you specify.
+                      For example, you can filter access based on the header values or the IP addresses
+                      that the requests originate from. AWS WAF helps protect web
+                      applications from common web exploits that could affect application availability,
+                      compromise security, or consume excessive resources.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/waf/" target="_blank">https://aws.amazon.com/waf/</a>.
+                   </p>
+                   
+                </dd>
+                <dt><a name="awsxray"></a>AWS X-Ray
+                </dt>
+                <dd>
+                   
+                   <p>A web service that collects data about requests that your application serves. X-Ray
+                      provides tools that you can use to view, filter, and gain
+                      insights into that data to identify issues and opportunities for optimization.
+                   </p>
+                   
+                   <p>See Also <a href="https://aws.amazon.com/xray/" target="_blank">https://aws.amazon.com/xray/</a>.
+                   </p>
+                   
+                </dd>
+             </dl>
+          
+
+
+
+</body>
+</html>
