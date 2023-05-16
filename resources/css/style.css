@@ -1,0 +1,278 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+body{
+    background-color: rgb(54, 93, 151);
+    background: -webkit-linear-gradient(top,rgb(64, 101, 156) 0,rgb(255, 255, 255) 100%);
+    background: linear-gradient(to bottom,rgb(64, 101, 156) 0,rgb(255, 255, 255) 100%);
+    background-repeat: no-repeat;
+    font-family: "Proxima Nova",Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+.layout-shadow{
+    box-shadow: 0 0 5px rgba(0,0,0,.9);
+    background-color: rgb(255, 255, 255);
+}
+.layout{
+    /*max-width: 940px;*/
+    margin: 45px auto;
+    line-height: 20px;
+}
+.photo-wrapper{
+    overflow: hidden;
+    border-radius: 6px;
+}
+.photo{
+    padding: 25px;
+    overflow: hidden;
+}
+.self-photo{
+    max-width: 100%;
+}
+.objective{
+    padding: 25px 25px 25px 0;
+}
+.name{
+    color: rgb(56, 99, 160);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 42px;
+    margin-top: 0;
+}
+.info{
+    color: rgb(169, 169, 169);
+    margin: 10px 0 0;
+}
+.summary{
+    color: rgb(169, 169, 169);
+    font-size: 14px;
+    margin-top: 10px;
+    min-height: 100px;
+    overflow: hidden;
+}
+.main-skills{
+    margin: 20px 0 -7px;
+}
+.skill{
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    padding: 2px 20px 0;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    background-color: rgb(23, 91, 160);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: none;
+}
+.skill:hover{
+    background: -webkit-linear-gradient(rgb(71, 119, 187),rgb(62, 104, 162));
+    background: linear-gradient(rgb(71, 119, 187),rgb(62, 104, 162));
+}
+.border{
+    border-left: 2px solid rgb(226, 235, 245);
+    border-top: 2px solid rgb(226, 235, 245);
+}
+.padding{
+    padding: 30px 30px 20px;
+}
+.title{
+    color: rgb(169, 169, 169);
+    font-weight: 700;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+.company-list{
+    padding-left: 0;
+}
+.companyDetails{
+    color: rgb(80, 80, 80);
+    font-size: 15px;
+    list-style: none;
+    margin: 0 0 7px;
+}
+.muted{
+    font-size: .9em;
+    color: rgb(139, 139, 139);
+}
+.companyDetails a{
+    color: rgb(56, 99, 160);
+    display: inline;
+    text-decoration: none;
+    -webkit-transition: color 150ms;
+    transition: color 150ms;
+    -webkit-transition-property: color,text-shadow,-webkit-transform;
+    transition-property: color,text-shadow,-webkit-transform;
+    transition-property: color,transform,text-shadow;
+    transition-property: color,transform,text-shadow,-webkit-transform;
+}
+.employment-title{
+    color: rgb(169, 169, 169);
+    font-weight: 700;
+    margin: 0 0 20px;
+    /*min-width: 195px;*/
+    text-transform: uppercase;
+}
+.emp-list-item{
+    clear: left;
+    margin: 0 0 20px;
+    overflow: hidden;
+}
+.float-right{
+    float: right;
+}
+.role{
+    color: rgb(56, 99, 160);
+    font-weight: 600;
+    padding-right: 130px;
+    font-size: 15px;
+}
+.range{
+    color: rgb(139, 139, 139);
+    font-size: 14px;
+    font-weight: 400;
+}
+.company{
+    color: rgb(80, 80, 80);
+}
+.res-list{
+    margin: 5px 0 5px;
+    padding-left: 16px;
+}
+.res-list li{
+    list-style: disc;
+    padding: 0 0 3px;
+    font-size: 14px;
+}
+.noLeftPadding{
+    padding-left: 0;
+}
+.noLeftBoarder{
+    border-left: none;
+}
+.link{
+    color: rgb(56, 99, 160);
+    display: inline;
+    text-decoration: none;
+    -webkit-transition: color 150ms;
+    transition: color 150ms;
+    -webkit-transition-property: color,text-shadow,-webkit-transform;
+    transition-property: color,text-shadow,-webkit-transform;
+    transition-property: color,transform,text-shadow;
+    transition-property: color,transform,text-shadow,-webkit-transform;
+}
+.free-exp-description{
+    margin: 5px 0 0;
+}
+.footer{
+    background-color: rgb(247, 249, 251);
+    background-image: none;
+    color: rgb(179, 189, 206);
+    line-height: 45px;
+    padding: 25px 30px;
+    /*position: relative;*/
+    /*background: rgb(252, 252, 252);*/
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+.footer a, .footer div {
+    color: rgb(179, 189, 206);
+}
+.footer-container{
+    background-color: rgb(247, 249, 251);
+}
+.contact-color{
+    color: rgb(179, 189, 206);
+}
+.align-right{
+    text-align: right;
+}
+.footer-background{
+    background-color: rgb(247, 249, 251);;
+}
+.opening_quote{
+    background: url("../images/quote-open.png") no-repeat;
+    background-size: 22px 14px;
+    height: 14px;
+    width: 22px;
+    left: -15px;
+    position: relative;
+    top: 9px;
+}
+.closing_quote{
+    background: url("../images/quote-close.png") no-repeat;
+    background-size: 22px 14px;
+    height: 14px;
+    width: 22px;
+    bottom: -10px;
+    position: relative;
+    right: 1px;
+    float: right;
+}
+.right-border{
+    border-right: 2px solid rgb(226, 235, 245);
+}
+.no-padding-right{
+    padding-right: 0;
+}
+.padding-left-25{
+    padding-left: 25px;
+}
+.padding-right-15{
+    padding-right: 20px;
+}
+.noRightPadding{
+    padding-right: 0;
+}
+.pading-left-10{
+    padding-left: 10px;
+}
+.font-size-15{
+    font-size: 15px;
+}
+.font-size-14{
+    font-size: 14px;
+}
+.pdf{
+    background-repeat: no-repeat;
+    height: 16px;
+    padding-right: 10px;
+
+}
+.pipe{
+    color: rgb(54, 93, 151);
+}
+.golden-words{
+    color:	#D5AD6D; /*if no support for background-clip*/
+
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.margin-top-25{
+    margin-top: 25px;
+}
+/*.header{*/
+/*background-color: rgb(64, 110, 170);*/
+/*color: rgb(255, 255, 255);*/
+/*line-height: 45px;*/
+/*padding: 25px 30px;*/
+/*}*/
+/*.current-role{*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*}*/
+/*.line{*/
+/*background-color: rgb(90, 130, 184);*/
+/*height: 45px;*/
+/*margin: 0 0 0 20px;*/
+/*!*position: relative;*!*/
+/*width: 2px;*/
+/*}*/

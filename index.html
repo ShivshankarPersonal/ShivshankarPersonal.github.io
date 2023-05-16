@@ -1,9 +1,364 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset=“UTF-8”>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Shivashankar</title>
+
+    <meta name="description" content="Shivshankar R" />
+    <meta name="author" content="Shivshankar R!" />
+
+    <!--<link href="resources/proximafonts/fonts.css" rel="stylesheet">-->
+    <link href="resources/css/reset.css" rel="stylesheet" />
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="resources/css/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicons/favicon.png"
+    />
   </head>
-<body>
-  <h1>hii</h1>
-</body>
+  <body ng-app="resume" ng-controller="MainResumeController">
+    <div class="container layout-shadow layout" ng-cloak>
+      <div class="row resume-top-section">
+        <div class="col-md-4 photo">
+          <div class="photo-wrapper">
+            <img
+              src="resources/images/photo.jpg"
+              alt="photo"
+              class="img-rounded self-photo"
+            />
+          </div>
+        </div>
+        <div class="col-md-8 objective">
+          <h1 class="name">Shiv Shankar</h1>
+          <div class="info">
+            Full-stack Developer | 14+ years experience | London, UK | Mobile
+            UK: +44 7442261482 | +44 7442261500
+          </div>
+          <div class="summary">
+            I am a highly efficient and reliable professional who possesses a
+            broad skill set for web application development. I have been working
+            on a range of products and clients—from working on scalability
+            problems in production engineering teams at HSBC and Credit Suisse
+            to launching new applications for Citibank and Barclays. Most of my
+            work consists of leading technical teams, by creating an easy
+            development environment, fixing technical debts, providing best
+            practices code examples, and mentoring developers. I have done my
+            Bachelor of Engineering in 2008.
+          </div>
+          <div class="main-skills">
+            <span ng-repeat="skill in data.mainSkills" class="skill"
+              >{{skill}}</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 border padding noLeftBoarder">
+          <div class="title">PORTFOLIO</div>
+          <ul class="company-list">
+            <li class="companyDetails" ng-repeat="portfolio in data.portfolios">
+              <strong>
+                <a href="#{{portfolio.id}}">{{portfolio.company}}</a>
+              </strong>
+              <div class="muted">
+                <span ng-repeat="skill in portfolio.skills" ng-if="!$last"
+                  >{{skill}},
+                </span>
+                <span ng-repeat="skill in portfolio.skills" ng-if="$last"
+                  >{{skill}}.
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 border padding right-border padding-right-15">
+          <div class="title">EXPERIENCE</div>
+          <div class="col-md-6 noLeftPadding">
+            <ul class="company-list">
+              <li class="companyDetails" ng-repeat="exp in data.experience1">
+                <strong> {{exp.name}}, </strong>
+                <span class="muted"> {{exp.no}} years</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 pading-left-10 noRightPadding">
+            <ul class="company-list">
+              <li class="companyDetails" ng-repeat="exp in data.experience2">
+                <strong> {{exp.name}}, </strong>
+                <span class="muted"> {{exp.no}} years</span>
+              </li>
+            </ul>
+          </div>
+          <!--<ul class="company-list">-->
+          <!--<li class="companyDetails" ng-repeat="exp in data.experience">-->
+          <!--<strong>-->
+          <!--{{exp.name}},-->
+          <!--</strong>-->
+          <!--<span class="muted"> {{exp.no}} years</span>-->
+          <!--</li>-->
+          <!--</ul>-->
+        </div>
+        <div class="col-md-4 border padding noLeftBoarder">
+          <div class="title">The Most Amazing</div>
+          <div class="muted">
+            <div class="opening_quote"></div>
+            ...software that I've ever built is running butterly smooth like
+            anything, which I accomplished in a very short period of time with
+            high quality code. For the same work I have been recognized as
+            <span class="golden-words"
+              ><strong>"Inspiring Performance"</strong></span
+            >
+            in the category of
+            <span class="golden-words"
+              ><strong>"Going Beyond Deliverables"</strong></span
+            >
+            once
+            <div class="closing_quote"></div>
+          </div>
+          <div class="muted margin-top-25">
+            <div class="opening_quote"></div>
+            ...for quick delivery of code, guiding team for following best
+            practices and coding standards, doing code review and helping team
+            in fixing the issue quickly. I have been recognized as
+            <span class="golden-words"
+              ><strong>“Round of Applause Promotion”</strong></span
+            >
+            in the category of
+            <span class="golden-words"
+              ><strong>“Creativity and Innovation” </strong
+              ><strong>3 Times</strong></span
+            >
+            <div class="closing_quote"></div>
+          </div>
+          <!--<ul class="company-list">-->
+          <!--<li class="companyDetails" ng-repeat="exp in data.experience">-->
+          <!--<strong>-->
+          <!--{{exp.name}},-->
+          <!--</strong>-->
+          <!--<span class="muted"> {{exp.no}} years</span>-->
+          <!--</li>-->
+          <!--</ul>-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 border padding noLeftBoarder">
+          <div class="employment-title">Employment</div>
+        </div>
+        <div class="col-md-10 border padding noLeftBoarder">
+          <ul class="noLeftPadding">
+            <li
+              class="emp-list-item"
+              ng-repeat="emp in data.employment"
+              id="{{emp.id}}"
+            >
+              <div>
+                <span class="role">{{emp.role}}</span>
+                <span class="float-right range">{{emp.range}}</span>
+              </div>
+              <div class="company">
+                <a href="{{emp.url}}" target="_blank" title="{{emp.url}}"
+                  >{{emp.company}}</a
+                >
+                <span class="pipe">|</span> Client -
+                <a href="{{emp.curl}}" title="{{emp.curl}}" target="_blank"
+                  >{{emp.client}}</a
+                >
+              </div>
+              <div class="muted">
+                <ul class="res-list">
+                  <li ng-repeat="res in emp.project">{{res}}</li>
+                </ul>
+              </div>
+              <div class="muted font-size-14">
+                <span class="font-size-14">Technologies: </span
+                ><span ng-repeat="tech in emp.techs" ng-if="!$last"
+                  >{{tech}},
+                </span>
+                <span ng-repeat="tech in emp.techs" ng-if="$last"
+                  >{{tech}}.
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 border padding noLeftBoarder">
+          <div class="employment-title">Experience</div>
+        </div>
+        <div class="col-md-10 border padding noLeftBoarder">
+          <ul class="noLeftPadding">
+            <li
+              class="emp-list-item"
+              ng-repeat="freeEmp in data.freelancingExperience"
+            >
+              <div>
+                <span class="role">{{freeEmp.name}}({{freeEmp.workType}})</span>
+                <!--<span class="float-right range">{{emp.range}}</span>-->
+              </div>
+              <div class="muted">
+                <a
+                  href="{{freeEmp.url}}"
+                  class="link font-size-14"
+                  title="{{freeEmp.url}}"
+                  target="_blank"
+                  >{{freeEmp.url}}</a
+                >
+              </div>
+              <!--<p class="free-exp-description">{{freeEmp.description}}</p>-->
+              <ul class="muted res-list">
+                <li ng-repeat="desc in freeEmp.description">{{desc}}</li>
+              </ul>
+              <div class="muted font-size-14">
+                <span class="font-size-14">Technologies: </span
+                ><span ng-repeat="techn in freeEmp.technologies" ng-if="!$last"
+                  >{{techn}},
+                </span>
+                <span ng-repeat="techn in freeEmp.technologies" ng-if="$last"
+                  >{{techn}}.
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 border padding noLeftBoarder">
+          <div class="employment-title">Skills</div>
+        </div>
+        <div class="col-md-10 border padding noLeftBoarder">
+          <ul class="noLeftPadding">
+            <li class="emp-list-item" ng-repeat="skl in data.skills ">
+              <div>
+                <span class="role">{{skl.name}}</span>
+                <!--<span class="float-right range">{{emp.range}}</span>-->
+              </div>
+              <div class="muted">
+                <span ng-repeat="item in skl.list" ng-if="!$last">
+                  {{item}},
+                </span>
+                <span ng-repeat="item in skl.list" ng-if="$last">
+                  {{item}}.
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 border padding noLeftBoarder">
+          <div class="employment-title">Education</div>
+        </div>
+        <div class="col-md-10 border padding noLeftBoarder">
+          <ul class="noLeftPadding">
+            <li class="emp-list-item" ng-repeat="edu in data.education">
+              <div>
+                <span class="role">{{edu.name}}</span>
+                <span class="float-right range">{{edu.year}}</span>
+              </div>
+              <div class="muted">{{edu.place}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 border padding noLeftBoarder">
+          <div class="employment-title">Certifications</div>
+        </div>
+        <div class="col-md-10 border padding noLeftBoarder">
+          <ul class="noLeftPadding">
+            <li class="emp-list-item" ng-repeat="cert in data.certification">
+              <div>
+                <span class="role">{{cert.name}}</span>
+                <span class="float-right range">{{cert.year}}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 border padding noLeftBoarder">
+          <div class="employment-title">Languages</div>
+        </div>
+        <div class="col-md-10 border padding noLeftBoarder">
+          <span class="muted">English, Hindi, Kannada, Marathi and Urdu</span>
+          <!--<ul class="noLeftPadding">-->
+          <!--<li class="emp-list-item" ng-repeat="edu in data.education">-->
+          <!--<div>-->
+          <!--<span class="role">{{edu.name}}</span>-->
+          <!--<span class="float-right range">{{edu.year}}</span>-->
+          <!--</div>-->
+          <!--<div class="muted">-->
+          <!--{{edu.place}}-->
+          <!--</div>-->
+          <!--</li>-->
+          <!--</ul>-->
+        </div>
+      </div>
+      <div class="row footer-container">
+        <div class="col-md-2 border padding noLeftBoarder footer">
+          <div class="employment-title">Contact</div>
+        </div>
+        <div class="col-md-4 border padding noLeftBoarder">
+          <div>
+            <strong class="contact-color">&#9742;</strong>
+            <span class="contact-color">+44 7442261482 / +44 7442261500</span>
+          </div>
+          <div class="contact-color">
+            <strong class="contact-color">&#128231; </strong>
+            <a href="mailto:ShivMS.mail@gmail.com" class="contact-color"
+              >ShivMS.mail@gmail.com</a
+            >
+            /
+            <a href="mailto:ShivMalayya.mail@gmail.com" class="contact-color"
+              >ShivMalayya.mail@gmail.com</a
+            >
+          </div>
+          <div class="contact-color">
+            <!--LinkedIn-->
+          </div>
+        </div>
+        <div class="col-md-6 border padding noLeftBoarder align-right">
+          <!--<a href="" class="btn btn-default contact-color footer-background"><span class="glyphicon glyphicon-download-alt"></span> Download Resume (PDF)</a>-->
+          <!--<a href="" class="btn btn-default contact-color footer-background"><span class="glyphicon glyphicon-download-alt"></span> Download Resume (MS Word)</a>-->
+          <!-- Single button -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-default dropdown-toggle contact-color footer-background"
+              data-toggle="dropdown"
+            >
+              <i class="glyphicon glyphicon-download-alt"></i> Download Resume
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="./data/Resume.pdf" target="_blank"
+                  ><img src="resources/images/pdf.ico" alt="" class="pdf" />
+                  PDF</a
+                >
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="./data/Resume.pdf"
+                  ><img src="resources/images/word.ico" alt="" class="pdf" /> MS
+                  Word</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="src/controller/MainResumeController.js"></script>
+  </body>
 </html>

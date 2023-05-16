@@ -1,0 +1,580 @@
+{
+  "mainSkills": [
+    "JavaScript",
+    "TypeScript",
+    "React.js",
+    "Redux.js",
+    "Node.js",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Pytest",
+    "Polars",
+
+    "Pandas",
+    "SQLModel",
+    "React-Testing-Library",
+    "Docker",
+    "Terraform",
+    "MongoDB",
+    "DynamoDB",
+    "Jest.js",
+    "Material UI",
+    "Express.js",
+    "ES6",
+    "ES7",
+    "Angular.js",
+    "Angular 2+",
+    "Ag-Grid",
+    "D3.js",
+    "NoSQL",
+    "Git",
+    "jQuery",
+    "Java 6",
+    "HTML 5",
+    "CSS3",
+    "AWS",
+    "SNS",
+    "SQS",
+    "CloudFront",
+    "S3",
+    "EC2",
+    "Lambda",
+    "API Gateway"
+  ],
+  "portfolios": [
+    {
+      "company": "Intropic Ltd, Canary Wharf, London",
+      "id": "intropic",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "Pytest",
+        "PostgreSQL",
+        "TypeScript",
+        "React",
+        "Jest",
+        "React-Testing-Library"
+      ]
+    },
+    {
+      "company": "HSBC Software Development Center, Pune",
+      "id": "hsbc",
+      "skills": ["React.js", "Node.js", "DynamoDB", "ES6", "ES7"]
+    },
+    {
+      "company": "Wipro Technologies",
+      "id": "WiproTechnologies",
+      "skills": ["React.js", "Node.js", "MongoDB", "ES6", "ES7"]
+    },
+    {
+      "company": "HotSchedules, Inc",
+      "id": "HotSchedulesInc",
+      "skills": ["Raspberry Pi", "Industrial IoT Platform", "Node.js"]
+    },
+    {
+      "company": "Citi Bank, North America",
+      "id": "CitiBank",
+      "url": "",
+      "skills": ["Angular.js", "Ag-Grid.js", "D3.js", "Gulp.js"]
+    },
+    {
+      "company": "Siemens Industry Software",
+      "id": "SiemensIndustrySoftware",
+      "url": "",
+      "skills": ["JavaScript", "HTML 5", "Sass", "Chart.js"]
+    },
+    {
+      "company": "Steria India Limited",
+      "id": "SteriaIndiaLimited",
+      "url": "",
+      "skills": ["JavaScript", "jQuery", "Bootstrap.js", "HTML5 Video API"]
+    },
+    {
+      "company": "Infosys Technologies",
+      "id": "InfosysTechnologies",
+      "url": "",
+      "skills": ["Java 6", "Spring 2", "IBM WebSphere", "JMS"]
+    }
+  ],
+  "experience1": [
+    {
+      "name": "Python",
+      "no": 2
+    },
+    {
+      "name": "FastAPI",
+      "no": 2
+    },
+    {
+      "name": "React.js",
+      "no": 6
+    },
+    {
+      "name": "Angular.js",
+      "no": 5
+    },
+    {
+      "name": "JavaScript",
+      "no": 12
+    },
+    {
+      "name": "ES6",
+      "no": 6
+    },
+    {
+      "name": "Node.js",
+      "no": 6
+    },
+    {
+      "name": "HTML 5",
+      "no": 10
+    },
+    {
+      "name": "Gulp.js",
+      "no": 2
+    },
+    {
+      "name": "Jest.js",
+      "no": 6
+    },
+    {
+      "name": "MongoDB",
+      "no": 5
+    },
+    {
+      "name": "D3.js",
+      "no": 7
+    },
+    {
+      "name": "Material UI",
+      "no": 6
+    },
+
+    {
+      "name": "Git",
+      "no": 7
+    },
+    {
+      "name": "Java 6",
+      "no": 2
+    }
+  ],
+  "experience2": [
+    {
+      "name": "Pytest",
+      "no": 2
+    },
+    {
+      "name": "SQLModel",
+      "no": 2
+    },
+    {
+      "name": "Redux.js",
+      "no": 6
+    },
+    {
+      "name": "Angular 2+",
+      "no": 1
+    },
+    {
+      "name": "JSX",
+      "no": 1.5
+    },
+    {
+      "name": "ES7",
+      "no": 2
+    },
+    {
+      "name": "Express.js",
+      "no": 3
+    },
+    {
+      "name": "CSS3",
+      "no": 5
+    },
+    {
+      "name": "Grunt.js",
+      "no": 1
+    },
+    {
+      "name": "Ag-Grid",
+      "no": 2
+    },
+    {
+      "name": "NoSQL",
+      "no": 3
+    },
+    {
+      "name": "Photoshop",
+      "no": 2
+    },
+    {
+      "name": "Bootstrap.js",
+      "no": 2
+    },
+    {
+      "name": "Python 3",
+      "no": 1
+    }
+  ],
+  "employment": [
+    {
+      "role": "Full Stack TypeScript/Python Developer",
+      "company": "Intropic Ltd, London, UK",
+      "id": "intropic",
+      "url": "https://intropic.io/",
+      "client": "Intropic, UK",
+      "curl": "https://intropic.io/",
+      "range": "2022 - still working",
+      "project": [
+        "Currently I am working on Passive Fund Intelligence application development as a Full stack( TypeScript & Python ) developer.",
+        "Design, develop, and deliver new features on a event driven microservices architecture.",
+        "Taking responsibility of requirement gathering, drawing architectural diagram, implementing data models, writing api and development of SPA using React and TypeScript."
+      ],
+      "techs": [
+        "Python",
+        "FastAPI",
+        "SQLModel",
+        "Pytest",
+        "PostgreSQL",
+        "TypeScript",
+        "React",
+        "AWS",
+        "GCP"
+      ]
+    },
+    {
+      "role": "Senior Lead Developer (Full-Stack)",
+      "company": "HSBC Software Development Center, Pune",
+      "id": "hsbc",
+      "url": "https://www.hsbc.co.in/",
+      "client": "HSBC, UK",
+      "curl": "https://www.hsbc.co.uk/",
+      "range": "2018 - 2022",
+      "project": [
+        "Managed end to end delivery of 3 PODs. ",
+        "Successffully Delivered projected within given timelines.",
+        "Design and development of scalable, cross-browser, cross-device compatible applications",
+        "Worked closely with the business analysts, product owners and design teams to redesign and implement",
+        "Authored standard-compliant code with focus on best practices, scalability, performance and improved accessibility.",
+        "Maintained high-level control over the architecture and made sure that it evolved in the right direction when new challenges appeared.",
+        "Set up continuous delivery and Scrum workflow. Helped with developer interviews and supported the team to get off the ground."
+      ],
+      "techs": [
+        "React.js",
+        "Redux.js",
+        "React-router.js",
+        "Jest.js",
+        "Node.js",
+        "MongoDB",
+        "ES6",
+        "ES7",
+        "JavaScript",
+        "SVN",
+        "Scaled Agile",
+        "Angular 2+",
+        "TypeScript.js",
+        "Jasmine.js"
+      ]
+    },
+    {
+      "role": "Senior Lead Developer (Full-Stack)",
+      "company": "Wipro Technologies",
+      "id": "WiproTechnologies",
+      "url": "https://www.wipro.com/en-IN/",
+      "client": "Credit Suisse, Switzerland",
+      "curl": "https://www.credit-suisse.com/ch/en.html",
+      "range": "2015 - 2018",
+      "project": [
+        "Design and development of scalable, cross-browser, cross-device compatible applications (Desktop & Tablet) ",
+        "Worked closely with the business analysts, product owners and design teams to redesign and implement",
+        "Authored standard-compliant code with focus on best practices, scalability, performance and improved accessibility.",
+        "Maintained high-level control over the architecture and made sure that it evolved in the right direction when new challenges appeared.",
+        "Set up continuous delivery and Scrum workflow. Helped with developer interviews and supported the team to get off the ground."
+      ],
+      "techs": [
+        "React.js",
+        "Redux.js",
+        "React-router.js",
+        "Jest.js",
+        "Node.js",
+        "MongoDB",
+        "ES6",
+        "ES7",
+        "JavaScript",
+        "SVN",
+        "Scaled Agile",
+        "Angular 2+",
+        "TypeScript.js",
+        "Jasmine.js"
+      ]
+    },
+    {
+      "role": "Lead Developer (Full-Stack)",
+      "company": "Citi Bank, North America",
+      "url": "https://www.citicorpfinance.co.in/CFIL/citicorpfinance.htm",
+      "id": "CitiBank",
+      "client": "Citi Bank, North America",
+      "curl": "http://www.citigroup.com/citi/about/countrypresence/united-states-usa.html",
+      "range": "2013 - 2015",
+      "project": [
+        "Redesigned and developed rich, custom presentation layer for Citi Private Banking portfolio for account opening process and forms storing and retrieval system",
+        "Consulted clients and design teams on delivering the best user experiences using rapid prototyping.",
+        "Developed mobile-friendly user interfaces, focusing on responsive design principles.",
+        "Delivered code focusing on best practices, scalability, high-performance and accessibility."
+      ],
+      "techs": [
+        "Angular.js",
+        "Ag-Grid.js",
+        "ui-router.js",
+        "D3.js",
+        "Gulp.js",
+        "Sass",
+        "HTML5",
+        "CSS3",
+        "Bootstrap.js",
+        "IVHTreeView.js",
+        "animate.css"
+      ]
+    },
+    {
+      "role": "Senior Software Consultant (Front-End)",
+      "company": "Siemens Industry Software Pvt. Ltd.",
+      "url": "https://www.plm.automation.siemens.com/global/en/",
+      "curl": "https://www.daimler.com/en/",
+      "id": "SiemensIndustrySoftware",
+      "client": "Daimler AG, Germany",
+      "range": "2011 - 2013",
+      "project": [
+        "Developed Web and Mobile Applications which works across multiple browsers and devices",
+        "Did code reviews and consults for tough developer problems to unblock whoever is stuck"
+      ],
+      "techs": [
+        "JavaScript",
+        "Sencha Touch",
+        "Ext.js",
+        "Sass",
+        "Chart.js",
+        "Linux",
+        "Scale Agile",
+        "jQuery",
+        "Cordova",
+        "Lodash.js",
+        "Eclipse with ADT Plugin"
+      ]
+    },
+    {
+      "role": "Senior Software Developer (Front-End)",
+      "company": "Steria India Limited",
+      "url": "http://www.soprasteria.in/en",
+      "curl": "https://www.barclaycard.co.uk/personal",
+      "id": "SteriaIndiaLimited",
+      "client": " Barclaycard, UK",
+      "range": "2011 - 2012",
+      "project": [
+        "Develop, design, maintenance and support of account services 2 web application for Barclaycard customers. It supports IE6 and Firefox 4 browsers",
+        "Integrated various 3rd party application for sending notification and secure communication with the client."
+      ],
+      "techs": [
+        "JavaScript",
+        "jQuery",
+        "Bootstrap.js",
+        "HTML5 Video API",
+        "Java 6",
+        "Photoshop",
+        "UX Design",
+        "UXPin"
+      ]
+    },
+    {
+      "role": "Software Developer (Java + UI Developer)",
+      "company": "Infosys Technologies",
+      "url": "https://www.infosys.com/",
+      "curl": "http://www.lexisnexis.co.in/en-in/home.page",
+      "id": "InfosysTechnologies",
+      "client": "LexisNexis, US",
+      "range": "2008 - 2011",
+      "project": [
+        "Developed Web application for Legal Entities and Attorneys",
+        "Developed Middleware application using Java 6 and Spring 2",
+        "Developed Web application which consumes RESTful APIs using Ajax"
+      ],
+      "techs": [
+        "Java 6",
+        "Spring 2",
+        "IBM WebSphere",
+        "JMS",
+        "HTML 4",
+        "CSS2",
+        "Eclipse",
+        "Toad",
+        "Sql",
+        "Oracle DB"
+      ]
+    }
+  ],
+  "freelancingExperience": [
+    {
+      "name": "HotSchedules",
+      "workType": "IoT Platform Development",
+      "url": "https://www.hotschedules.com/",
+      "description": [
+        "Successfully implemented IoT in one of the HotSchedule's product which continuously receives data from vast variety of Systems across United States",
+        "We divided our application into 4 layers, i.e IoT Devices, IoT Gateway, Data Agrregate cum pre-processing, cloud cum data analytics layer",
+        "I extensively worked on data aggregate layer as it contains heavy-duty data mapping engine in it.",
+        "Automated parsing of data from different file formats and storing in NoSQL database(MongoDB) using Node.js middleware",
+        "Presented data to the client using D3.js Charts and Ag-Grid"
+      ],
+      "technologies": [
+        "IoT Platform",
+        "Raspbian OS",
+        "Raspberry Pi",
+        "Node.js",
+        "Express.js",
+        "AWS",
+        "MongoDB",
+        "Angular.js",
+        "Ag-Grid",
+        "D3.js",
+        "HTML5",
+        "CSS3",
+        "Passport.js",
+        "bcrypt.js",
+        "Amazon EMR(Cloud based analytics engine)",
+        "Nginx WAF(Web Application Firewall)",
+        "Express-JWT(JSONWebToken)"
+      ]
+    },
+    {
+      "name": "Staples Business Advantage",
+      "workType": "Development",
+      "url": "https://www.staplesadvantage.com/learn",
+      "description": [
+        "Delivered very high quality code for their one of the most widely used web application across the world",
+        "Millions of people consume same web pages across the world using different devices",
+        "Developed cross-browser, cross-device compatible web page for Staples Business Advantages portal"
+      ],
+      "technologies": ["HTML 5", "CSS3", "JavaScript", "jQuery", "Ajax", "JSON"]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "list": [
+        "JavaScript",
+        "HTML 5",
+        "CSS3",
+        "Java 6",
+        "Python 3",
+        "TypeScript",
+        "ES6",
+        "ES7",
+        "JSX",
+        "Sass",
+        "NoSQL",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "list": [
+        "Angular.js",
+        "Angular 2+",
+        "Redux",
+        "Express.js",
+        "Ag-Grid.js",
+        "D3.js",
+        "Chart.js",
+        "Bootstrap.js",
+        "Material UI",
+        "Bootstrap UI",
+        "Ext.js",
+        "Sencha Touch"
+      ]
+    },
+    {
+      "name": "Libraries/APIs",
+      "list": [
+        "React.js",
+        "jQuery.js",
+        "jQueryUI.js",
+        "Lodash.js",
+        "Jest.js",
+        "Jasmine.js",
+        "Gulp.js",
+        "Grunt.js",
+        "Immutable.js",
+        "Reselect.js",
+        "enzyme.js"
+      ]
+    },
+    {
+      "name": "Paradigms",
+      "list": [
+        "Functional Programming",
+        "Object Oriented Programming(OOP)",
+        "MVC Architecture",
+        "Flux Architecture",
+        "Scaled Agile Development Methodology",
+        "Asynchronous Programming",
+        "Test-driven Development (TDD)",
+        "Domain Centric Architecture",
+        "Domain Driven Design(DDD)"
+      ]
+    },
+    {
+      "name": "Platforms",
+      "list": ["Mac OS X", "Linux", "Windows 7"]
+    },
+    {
+      "name": "Misc",
+      "list": [
+        "Back-end Development",
+        "SVG",
+        "CANVAS",
+        "CSS Preprocessors",
+        "Front-end Architecture",
+        "Node Inspector"
+      ]
+    },
+    {
+      "name": "Storage",
+      "list": ["NoSQL", "MongoDB", "MySQL"]
+    },
+    {
+      "name": "Tools",
+      "list": ["Git", "SVN", "JIRA", "TeamCity", "Intellij IDEA (WebStorm)"]
+    }
+  ],
+  "education": [
+    {
+      "name": "Bachelor of Engineering (68%)",
+      "year": "20004 - 2008",
+      "place": "Visvesvaraya Technological University - Belgaum, India"
+    }
+  ],
+  "certification": [
+    {
+      "name": "AWS Certified Solutions Architect - Associate",
+      "year": "2022 - 2023"
+    },
+    {
+      "name": "Oracle Certified Java 6 Developer",
+      "year": "2010 - 2011"
+    },
+    {
+      "name": "SAFe® 4 Practitioner Certification",
+      "year": "2016 - 2017"
+    },
+    {
+      "name": "JEE Technology 101 Certification",
+      "year": "2011 - 2012"
+    },
+    {
+      "name": "JEE Technology 201 Certification",
+      "year": "2011 - 2012"
+    }
+  ],
+  "recognition": [""]
+}
