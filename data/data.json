@@ -33,14 +33,7 @@
     "Java 6",
     "HTML 5",
     "CSS3",
-    "AWS",
-    "SNS",
-    "SQS",
-    "CloudFront",
-    "S3",
-    "EC2",
-    "Lambda",
-    "API Gateway"
+    "AWS"
   ],
   "portfolios": [
     {
@@ -100,15 +93,15 @@
   "experience1": [
     {
       "name": "Python",
-      "no": 2
+      "no": 4
     },
     {
       "name": "FastAPI",
-      "no": 2
+      "no": 3
     },
     {
       "name": "React.js",
-      "no": 6
+      "no": 8
     },
     {
       "name": "Angular.js",
